@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Makeup Artist</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Beauty by Artist</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Portfolio</h1>
+            <p>Explore our stunning makeup transformations</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="bridal">Bridal</button>
+                <button class="filter-btn" data-filter="party">Party</button>
+                <button class="filter-btn" data-filter="editorial">Editorial</button>
+                <button class="filter-btn" data-filter="photoshoot">Photoshoot</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="bridal">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">Bridal Look 1</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Classic Bridal</h3>
+                        <p>Elegant bridal makeup</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="bridal">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">Bridal Look 2</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Modern Bride</h3>
+                        <p>Contemporary bridal style</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="party">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">Party Look 1</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Glamorous Evening</h3>
+                        <p>Party makeup with shimmer</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="party">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">Party Look 2</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Bold & Beautiful</h3>
+                        <p>Statement party look</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="editorial">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">Editorial 1</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Fashion Forward</h3>
+                        <p>Editorial fashion shoot</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="editorial">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">Editorial 2</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Artistic Vision</h3>
+                        <p>Creative editorial makeup</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="photoshoot">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">Photoshoot 1</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Natural Glow</h3>
+                        <p>Soft photoshoot makeup</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="photoshoot">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">Photoshoot 2</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Studio Perfect</h3>
+                        <p>Professional photoshoot look</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="bridal">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">Bridal Look 3</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Royal Bride</h3>
+                        <p>Luxurious bridal makeup</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for image viewing -->
+    <div class="modal" id="portfolioModal">
+        <span class="modal-close">&times;</span>
+        <div class="modal-content">
+            <div class="modal-image"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Beauty by Artist</h3>
+                    <p>Professional makeup artistry for all occasions</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Beauty by Artist. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
