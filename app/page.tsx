@@ -71,7 +71,7 @@ export default function Home() {
           <div className="features-grid">
             <div className="feature">
               <h3>Professional Experience</h3>
-              <p>Over 10 years of experience in makeup artistry</p>
+              <p>Over 5 years of experience in makeup artistry</p>
             </div>
             <div className="feature">
               <h3>Premium Products</h3>

@@ -31,7 +31,7 @@ export default function About() {
               <h2>Meet Your Makeup Artist</h2>
               <p>
                 Hello! I&apos;m passionate about bringing out the natural beauty in
-                everyone. With over 10 years of experience in the makeup
+                everyone. With over 5 years of experience in the makeup
                 industry, I&apos;ve had the privilege of working with hundreds of
                 clients for their special occasions.
               </p>
@@ -63,12 +63,12 @@ export default function About() {
               <p>Certified Makeup Artist from International Makeup Academy</p>
             </div>
             <div className="qualification-card">
-              <h3>10+ Years Experience</h3>
-              <p>Over a decade of professional makeup artistry</p>
+              <h3>5+ Years Experience</h3>
+              <p>Over 5 years of professional makeup artistry</p>
             </div>
             <div className="qualification-card">
-              <h3>500+ Happy Clients</h3>
-              <p>Successfully served hundreds of satisfied clients</p>
+              <h3>20+ Happy Clients</h3>
+              <p>Successfully served satisfied clients</p>
             </div>
             <div className="qualification-card">
               <h3>Brand Collaborations</h3>

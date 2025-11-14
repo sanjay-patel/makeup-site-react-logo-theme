@@ -33,9 +33,10 @@ export default function Contact() {
                   <div className="contact-text">
                     <h3>Address</h3>
                     <p>
-                      123 Beauty Street
+                      Shop No. 7, 1st floor, Marutidham Row-house, ABC circle
                       <br />
-                      New York, NY 10001
+                      Sarathana Jakatnaka, Surat - 395006
+                      <br />
                     </p>
                   </div>
                 </div>
@@ -43,7 +44,7 @@ export default function Contact() {
                   <div className="contact-icon">📞</div>
                   <div className="contact-text">
                     <h3>Phone</h3>
-                    <p>+1 (555) 123-4567</p>
+                    <p>+91 9712652262</p>
                   </div>
                 </div>
                 <div className="contact-item">
@@ -58,9 +59,9 @@ export default function Contact() {
                   <div className="contact-text">
                     <h3>Working Hours</h3>
                     <p>
-                      Mon - Sat: 9:00 AM - 7:00 PM
+                      Mon - Sat: 10:00 AM - 6:00 PM
                       <br />
-                      Sun: By Appointment
+                      Sun: 10:00 AM - 2:00 PM
                     </p>
                   </div>
                 </div>
@@ -69,15 +70,15 @@ export default function Contact() {
               <div className="social-media">
                 <h3>Follow Us</h3>
                 <div className="social-icons">
-                  <a href="#" aria-label="Instagram">
+                  <a href="https://www.instagram.com/bhumimakeupartistry/" target='_new' aria-label="Instagram">
                     📷 Instagram
                   </a>
-                  <a href="#" aria-label="Facebook">
+                  {/* <a href="#" aria-label="Facebook">
                     👍 Facebook
                   </a>
                   <a href="#" aria-label="Twitter">
                     🐦 Twitter
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

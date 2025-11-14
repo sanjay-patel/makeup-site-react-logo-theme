@@ -121,7 +121,7 @@ export default function ContactForm() {
             required
           />
         </div>
-        <div className="form-group">
+        {/* <div className="form-group">
           <label htmlFor="service">Service Type *</label>
           <select
             id="service"
@@ -137,8 +137,8 @@ export default function ContactForm() {
             <option value="editorial">Editorial Makeup</option>
             <option value="other">Other</option>
           </select>
-        </div>
-        <div className="form-group">
+        </div> */}
+        {/* <div className="form-group">
           <label htmlFor="date">Preferred Date</label>
           <input
             type="date"
@@ -148,7 +148,7 @@ export default function ContactForm() {
             onChange={handleChange}
             min={today}
           />
-        </div>
+        </div> */}
         <div className="form-group">
           <label htmlFor="message">Message *</label>
           <textarea

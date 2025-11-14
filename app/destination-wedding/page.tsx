@@ -39,7 +39,7 @@ export default function DestinationWedding() {
                 stunning on your big day.
               </p>
               <p>
-                With over 10 years of experience and extensive travel portfolio across India,
+                With over 5 years of experience and extensive travel portfolio across India,
                 we understand the unique challenges and requirements of destination weddings.
                 We bring premium products, professional equipment, and expertise to ensure
                 flawless makeup that lasts throughout your celebration, from traditional
@@ -176,13 +176,6 @@ export default function DestinationWedding() {
               </p>
             </div>
             <div className="value-item">
-              <h3>Stress-Free Planning</h3>
-              <p>
-                We handle all coordination and logistics, so you can focus on
-                enjoying your destination wedding experience.
-              </p>
-            </div>
-            <div className="value-item">
               <h3>Long-Lasting Results</h3>
               <p>
                 Using premium, waterproof, and long-wear products that withstand
@@ -201,7 +194,7 @@ export default function DestinationWedding() {
       </section>
 
       {/* Popular Destinations */}
-      <section className="about-content" style={{ paddingTop: 0 }}>
+      {/* <section className="about-content" style={{ paddingTop: 0 }}>
         <div className="container">
           <h2 className="section-title">Popular Destination Wedding Locations in India</h2>
           <div className="about-text" style={{ maxWidth: '800px', margin: '0 auto' }}>
@@ -227,7 +220,7 @@ export default function DestinationWedding() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Booking Process */}
       <section className="services" style={{ paddingBottom: '3rem' }}>
@@ -250,16 +243,16 @@ export default function DestinationWedding() {
                 date with a deposit.
               </p>
             </div>
-            <div className="service-card">
+            {/* <div className="service-card">
               <div className="service-icon">3️⃣</div>
               <h3>Trial Session</h3>
               <p>
                 Schedule a trial session (virtual or in-person) to perfect your
                 bridal makeup look before the big day.
               </p>
-            </div>
+            </div> */}
             <div className="service-card">
-              <div className="service-icon">4️⃣</div>
+              <div className="service-icon">3️⃣</div>
               <h3>Wedding Day Magic</h3>
               <p>
                 We arrive at your destination, create your perfect look, and provide
