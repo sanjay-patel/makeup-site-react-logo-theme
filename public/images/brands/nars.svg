@@ -1,0 +1,13 @@
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .nars-text {
+        font-family: 'Helvetica Neue', 'Arial', sans-serif;
+        font-weight: 900;
+        letter-spacing: 8px;
+      }
+    </style>
+  </defs>
+  <rect width="200" height="100" fill="transparent"/>
+  <text x="100" y="58" text-anchor="middle" class="nars-text" font-size="36" fill="#000000">NARS</text>
+</svg>

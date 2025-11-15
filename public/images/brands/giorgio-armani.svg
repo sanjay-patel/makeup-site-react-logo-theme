@@ -1,0 +1,14 @@
+<svg width="240" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .brand-text {
+        font-family: 'Didot', 'Bodoni MT', 'Times New Roman', serif;
+        font-weight: 400;
+        letter-spacing: 3px;
+      }
+    </style>
+  </defs>
+  <rect width="240" height="100" fill="transparent"/>
+  <text x="120" y="45" text-anchor="middle" class="brand-text" font-size="18" fill="#000000">GIORGIO ARMANI</text>
+  <text x="120" y="68" text-anchor="middle" class="brand-text" font-size="11" fill="#666666" letter-spacing="2">BEAUTY</text>
+</svg>

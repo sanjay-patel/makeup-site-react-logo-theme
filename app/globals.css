@@ -196,6 +196,59 @@ body {
   color: #666;
 }
 
+/* Brands Section */
+.brands {
+  padding: 5rem 0;
+  background: #fff;
+}
+.brands .brands-subtitle {
+  text-align: center;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+}
+.brands .brands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.brands .brand-card {
+  background: #faf6ef;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.brands .brand-card:hover {
+  transform: translateY(-5px);
+  border-color: #d6a553;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(214, 165, 83, 0.2);
+}
+.brands .brand-card .brand-logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brands .brand-card .brand-logo img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.brands .brand-card:hover .brand-logo img {
+  transform: scale(1.05);
+}
+
 /* Why Choose Section */
 .why-choose {
   padding: 5rem 0;

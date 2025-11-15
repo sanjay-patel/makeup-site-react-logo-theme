@@ -1,0 +1,14 @@
+<svg width="220" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .fenty-text {
+        font-family: 'Futura', 'Century Gothic', 'Arial', sans-serif;
+        font-weight: 700;
+        letter-spacing: 4px;
+      }
+    </style>
+  </defs>
+  <rect width="220" height="100" fill="transparent"/>
+  <text x="110" y="48" text-anchor="middle" class="fenty-text" font-size="22" fill="#000000">FENTY</text>
+  <text x="110" y="70" text-anchor="middle" class="fenty-text" font-size="14" fill="#666666" letter-spacing="3">BEAUTY</text>
+</svg>

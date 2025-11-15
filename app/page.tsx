@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Hero from '@/components/Hero'
 import Link from 'next/link'
+import Image from 'next/image'
+import { brands } from '@/data/brands'
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -60,6 +62,38 @@ export default function Home() {
               <h3>Editorial Makeup</h3>
               <p>Creative and artistic makeup for fashion and editorial work.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Brands Section */}
+      <section className="brands">
+        <div className="container">
+          <h2 className="section-title">Premium Brands We Use</h2>
+          <p className="brands-subtitle">
+            We work exclusively with luxury and high-performance makeup brands to ensure flawless results
+          </p>
+          <div className="brands-grid">
+            {brands.map((brand) => (
+              <a
+                key={brand.name}
+                href={brand.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="brand-card"
+              >
+                <div className="brand-logo">
+                  <Image
+                    src={brand.logo || '/images/brands/placeholder.svg'}
+                    alt={`${brand.name} logo`}
+                    width={200}
+                    height={80}
+                    style={{ objectFit: 'contain' }}
+                    unoptimized
+                  />
+                </div>
+              </a>
+            ))}
           </div>
         </div>
       </section>

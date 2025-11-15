@@ -47,13 +47,13 @@ export default function Contact() {
                     <p>+91 9712652262</p>
                   </div>
                 </div>
-                <div className="contact-item">
+                {/* <div className="contact-item">
                   <div className="contact-icon">✉️</div>
                   <div className="contact-text">
                     <h3>Email</h3>
                     <p>info@beautybyartist.com</p>
                   </div>
-                </div>
+                </div> */}
                 <div className="contact-item">
                   <div className="contact-icon">🕐</div>
                   <div className="contact-text">

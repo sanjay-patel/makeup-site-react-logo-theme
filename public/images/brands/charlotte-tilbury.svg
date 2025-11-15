@@ -1,0 +1,14 @@
+<svg width="260" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .ct-text {
+        font-family: 'Playfair Display', 'Georgia', serif;
+        font-style: italic;
+        letter-spacing: 2px;
+      }
+    </style>
+  </defs>
+  <rect width="260" height="100" fill="transparent"/>
+  <text x="130" y="45" text-anchor="middle" class="ct-text" font-size="20" font-weight="600" fill="#1a1a1a">Charlotte</text>
+  <text x="130" y="70" text-anchor="middle" class="ct-text" font-size="20" font-weight="600" fill="#1a1a1a">Tilbury</text>
+</svg>

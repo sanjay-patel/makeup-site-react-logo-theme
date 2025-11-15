@@ -1,0 +1,14 @@
+<svg width="260" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .pml-text {
+        font-family: 'Helvetica Neue', 'Arial', sans-serif;
+        font-weight: 700;
+        letter-spacing: 4px;
+      }
+    </style>
+  </defs>
+  <rect width="260" height="100" fill="transparent"/>
+  <text x="130" y="45" text-anchor="middle" class="pml-text" font-size="20" fill="#000000">PAT McGRATH</text>
+  <text x="130" y="68" text-anchor="middle" class="pml-text" font-size="16" fill="#666666" letter-spacing="6">LABS</text>
+</svg>
