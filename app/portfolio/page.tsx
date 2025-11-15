@@ -61,8 +61,8 @@ export default function Portfolio() {
                   <Image
                     src={image.src}
                     alt={image.alt}
-                    width={400}
-                    height={400}
+                    width={500}
+                    height={500}
                     style={{ width: '100%', height: 'auto', display: 'block' }}
                   />
                 </div>
