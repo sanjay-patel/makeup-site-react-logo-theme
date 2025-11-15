@@ -7,33 +7,33 @@ import StructuredData from '@/components/StructuredData'
 export const metadata: Metadata = {
   metadataBase: new URL('https://beautybyartist.com'),
   title: {
-    default: 'Beauty by Artist | Professional Makeup Artist Services',
-    template: '%s | Beauty by Artist'
+    default: 'Bhumi Makeup Artistry | Professional Makeup Artist Services',
+    template: '%s | Bhumi Makeup Artistry'
   },
   description: 'Professional makeup artistry for all occasions including bridal makeup, party makeup, photoshoots, and editorial work. Over 10 years of experience with premium products.',
   keywords: ['makeup artist', 'bridal makeup', 'party makeup', 'professional makeup', 'photoshoot makeup', 'editorial makeup', 'beauty services'],
-  authors: [{ name: 'Beauty by Artist' }],
-  creator: 'Beauty by Artist',
-  publisher: 'Beauty by Artist',
+  authors: [{ name: 'Bhumi Makeup Artistry' }],
+  creator: 'Bhumi Makeup Artistry',
+  publisher: 'Bhumi Makeup Artistry',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://beautybyartist.com',
-    siteName: 'Beauty by Artist',
-    title: 'Beauty by Artist | Professional Makeup Artist Services',
+    siteName: 'Bhumi Makeup Artistry',
+    title: 'Bhumi Makeup Artistry | Professional Makeup Artist Services',
     description: 'Professional makeup artistry for all occasions including bridal makeup, party makeup, photoshoots, and editorial work.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Beauty by Artist - Professional Makeup Services',
+        alt: 'Bhumi Makeup Artistry - Professional Makeup Services',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Beauty by Artist | Professional Makeup Artist Services',
+    title: 'Bhumi Makeup Artistry | Professional Makeup Artist Services',
     description: 'Professional makeup artistry for all occasions including bridal makeup, party makeup, photoshoots, and editorial work.',
     images: ['/og-image.jpg'],
   },

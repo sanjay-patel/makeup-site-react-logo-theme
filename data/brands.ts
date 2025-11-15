@@ -11,24 +11,29 @@ export const brands: Brand[] = [
     logo: '/images/brands/giorgio-armani.svg',
   },
   {
-    name: 'NARS',
-    url: 'https://www.narscosmetics.com',
-    logo: '/images/brands/nars.svg',
-  },
-  {
-    name: 'Fenty Beauty',
-    url: 'https://www.fentybeauty.com',
-    logo: '/images/brands/fenty-beauty.svg',
-  },
-  {
     name: 'DIOR',
     url: 'https://www.dior.com/beauty',
     logo: '/images/brands/dior.svg',
   },
   {
+    name: 'PAT McGRATH LABS',
+    url: 'https://www.patmcgrath.com',
+    logo: '/images/brands/pat-mcgrath-labs.svg',
+  },
+  {
     name: 'Charlotte Tilbury',
     url: 'https://www.charlottetilbury.com',
     logo: '/images/brands/charlotte-tilbury.svg',
+  },
+  {
+    name: 'Hourglass',
+    url: 'https://www.hourglasscosmetics.com',
+    logo: '/images/brands/hourglass.svg',
+  },
+  {
+    name: 'NARS',
+    url: 'https://www.narscosmetics.com',
+    logo: '/images/brands/nars.svg',
   },
   {
     name: 'Makeup by Mario',
@@ -41,13 +46,9 @@ export const brands: Brand[] = [
     logo: '/images/brands/one-size.svg',
   },
   {
-    name: 'PAT McGRATH LABS',
-    url: 'https://www.patmcgrath.com',
-    logo: '/images/brands/pat-mcgrath-labs.svg',
+    name: 'Fenty Beauty',
+    url: 'https://www.fentybeauty.com',
+    logo: '/images/brands/fenty-beauty.svg',
   },
-  {
-    name: 'Hourglass',
-    url: 'https://www.hourglasscosmetics.com',
-    logo: '/images/brands/hourglass.svg',
-  },
+
 ];

@@ -47,12 +47,12 @@ export default function Navbar() {
         <Link href="/" className="nav-brand">
           <Image
             src="/logo.jpg"
-            alt="Beauty by Artist Logo"
+            alt="Bhumi Makeup Artistry Logo"
             width={40}
             height={40}
             priority
           />
-          <h1>Beauty by Artist</h1>
+          <h1>Bhumi Makeup Artistry</h1>
         </Link>
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <li>

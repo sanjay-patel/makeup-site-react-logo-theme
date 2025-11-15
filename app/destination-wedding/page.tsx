@@ -1,13 +1,14 @@
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Destination Wedding Makeup Services in India',
   description: 'Professional destination wedding makeup services across India. Travel to Goa, Udaipur, Jaipur, Ahmedabad, Baroda, and more. Expert bridal makeup artist available for destination weddings throughout India.',
   keywords: ['destination wedding makeup India', 'travel makeup artist India', 'wedding makeup services India', 'bridal makeup Goa', 'destination bridal artist India', 'wedding makeup Udaipur', 'wedding makeup Ahmedabad', 'wedding makeup Baroda', 'bridal makeup Gujarat'],
   openGraph: {
-    title: 'Destination Wedding Makeup Services in India | Beauty by Artist',
+    title: 'Destination Wedding Makeup Services in India | Bhumi Makeup Artistry',
     description: 'Professional makeup artist available for destination weddings across India. Make your dream wedding perfect with expert bridal makeup services.',
   },
 }
@@ -25,9 +26,13 @@ export default function DestinationWedding() {
         <div className="container">
           <div className="about-grid">
             <div className="about-image">
-              <div className="image-placeholder">
-                <p>Destination Wedding</p>
-              </div>
+              <Image
+                src="/images/destination-wedding.png"
+                alt="Destination Wedding Makeup Services"
+                width={400}
+                height={400}
+                className="destination-wedding-photo"
+              />
             </div>
             <div className="about-text">
               <h2>Your Perfect Wedding, Anywhere in India</h2>
@@ -72,8 +77,8 @@ export default function DestinationWedding() {
               <div className="service-icon">💄</div>
               <h3>Bridal Makeup</h3>
               <p>
-                Complete bridal makeup service with trial session, premium
-                products, and long-lasting application techniques.
+                Complete bridal makeup service with premium
+                products and long-lasting application techniques.
               </p>
             </div>
             <div className="service-card">
@@ -120,21 +125,21 @@ export default function DestinationWedding() {
             <div className="qualification-card">
               <h3>Essential Package</h3>
               <p>
-                Bride makeup with trial session, travel to destination, premium
+                Bride makeup, travel to destination, premium
                 products, and basic touch-up kit.
               </p>
             </div>
             <div className="qualification-card">
               <h3>Deluxe Package</h3>
               <p>
-                Bride + 4 bridesmaids, trial session, multi-day availability,
+                Bride + 4 bridesmaids, multi-day availability,
                 on-site touch-ups, and emergency kit.
               </p>
             </div>
             <div className="qualification-card">
               <h3>Premium Package</h3>
               <p>
-                Full bridal party (up to 10 people), multiple trial sessions,
+                Full bridal party (up to 10 people),
                 dedicated artist for entire event, touch-up services all day.
               </p>
             </div>

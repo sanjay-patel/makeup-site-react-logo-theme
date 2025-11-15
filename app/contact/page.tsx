@@ -4,9 +4,9 @@ import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Get in touch to book your makeup appointment. Contact Beauty by Artist for bridal makeup, party makeup, photoshoot, and editorial makeup services.',
+  description: 'Get in touch to book your makeup appointment. Contact Bhumi Makeup Artistry for bridal makeup, party makeup, photoshoot, and editorial makeup services.',
   openGraph: {
-    title: 'Contact Us | Beauty by Artist',
+    title: 'Contact Us | Bhumi Makeup Artistry',
     description: 'Get in touch to book your makeup appointment with our professional makeup artist.',
   },
 }

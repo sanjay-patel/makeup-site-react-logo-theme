@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description: 'Meet your professional makeup artist with over 10 years of experience. Certified professional specializing in bridal makeup, party looks, photoshoots, and editorial work.',
+  description: 'Meet Bhumi Patoliya, your professional makeup artist with over 5 years of experience. Certified professional specializing in bridal makeup, party looks, photoshoots, and editorial work.',
   openGraph: {
-    title: 'About Us | Beauty by Artist',
-    description: 'Meet your professional makeup artist with over 10 years of experience in beauty and makeup artistry.',
+    title: 'About Bhumi Patoliya | Bhumi Makeup Artistry',
+    description: 'Meet Bhumi Patoliya, your professional makeup artist with over 5 years of experience in beauty and makeup artistry.',
   },
 }
 
@@ -23,14 +24,19 @@ export default function About() {
         <div className="container">
           <div className="about-grid">
             <div className="about-image">
-              <div className="image-placeholder">
-                <p>Artist Photo</p>
-              </div>
+              <Image
+                src="/images/artist-photo.png"
+                alt="Bhumi Patoliya - Professional Makeup Artist"
+                width={400}
+                height={400}
+                className="artist-photo"
+              />
             </div>
             <div className="about-text">
               <h2>Meet Your Makeup Artist</h2>
+              <h3 style={{ color: '#d6a553', marginBottom: '1rem', fontSize: '1.5rem' }}>Bhumi Patoliya</h3>
               <p>
-                Hello! I&apos;m passionate about bringing out the natural beauty in
+                Hello! I&apos;m Bhumi Patoliya, and I&apos;m passionate about bringing out the natural beauty in
                 everyone. With over 5 years of experience in the makeup
                 industry, I&apos;ve had the privilege of working with hundreds of
                 clients for their special occasions.

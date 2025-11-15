@@ -2,7 +2,7 @@ export default function StructuredData() {
   const localBusinessData = {
     '@context': 'https://schema.org',
     '@type': 'BeautySalon',
-    name: 'Beauty by Artist',
+    name: 'Bhumi Makeup Artistry',
     description: 'Professional makeup artistry for all occasions',
     url: 'https://beautybyartist.com',
     telephone: '+1-555-123-4567',

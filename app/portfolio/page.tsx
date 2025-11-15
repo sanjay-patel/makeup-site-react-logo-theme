@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Portfolio',
   description: 'Explore our stunning makeup transformations including bridal makeup, party looks, editorial work, and photoshoot makeup. View our professional portfolio.',
   openGraph: {
-    title: 'Portfolio | Beauty by Artist',
+    title: 'Portfolio | Bhumi Makeup Artistry',
     description: 'Explore our stunning makeup transformations and professional work.',
   },
 }
