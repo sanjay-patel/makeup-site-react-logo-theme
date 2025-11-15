@@ -46,7 +46,7 @@ export default function Navbar() {
       <div className="container">
         <Link href="/" className="nav-brand">
           <Image
-            src="/logo.svg"
+            src="/logo.jpg"
             alt="Beauty by Artist Logo"
             width={40}
             height={40}
