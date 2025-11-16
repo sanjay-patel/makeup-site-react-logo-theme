@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cdk": "cdk",
+    "cdk:deploy": "cdk deploy",
+    "cdk:synth": "cdk synth",
+    "cdk:diff": "cdk diff",
+    "cdk:destroy": "cdk destroy"
   },
   "dependencies": {
     "next": "14.0.0",
@@ -15,9 +20,13 @@
     "sharp": "^0.34.5"
   },
   "devDependencies": {
+    "@aws-cdk/aws-amplify-alpha": "^2.224.0-alpha.0",
     "@types/node": "^20.0.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
+    "aws-cdk-lib": "^2.224.0",
+    "constructs": "^10.4.3",
+    "ts-node": "^10.9.2",
     "typescript": "^5.0.0"
   }
 }
