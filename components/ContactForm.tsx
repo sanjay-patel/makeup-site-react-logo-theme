@@ -30,7 +30,7 @@ export default function ContactForm() {
       !formData.name ||
       !formData.email ||
       !formData.phone ||
-      !formData.service ||
+      // !formData.service ||
       !formData.message
     ) {
       setFormMessage({

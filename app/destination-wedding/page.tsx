@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Destination Wedding Makeup Services in India',
+  title: 'Destination Wedding Makeup Services',
   description: 'Professional destination wedding makeup services across India. Travel to Goa, Udaipur, Jaipur, Ahmedabad, Baroda, and more. Expert bridal makeup artist available for destination weddings throughout India.',
   keywords: ['destination wedding makeup India', 'travel makeup artist India', 'wedding makeup services India', 'bridal makeup Goa', 'destination bridal artist India', 'wedding makeup Udaipur', 'wedding makeup Ahmedabad', 'wedding makeup Baroda', 'bridal makeup Gujarat'],
   openGraph: {
@@ -17,7 +17,7 @@ export default function DestinationWedding() {
   return (
     <>
       <PageHeader
-        title="Destination Wedding Services in India"
+        title="Destination Wedding Services"
         subtitle="Making your dream wedding beautiful, anywhere across India"
       />
 
@@ -35,7 +35,7 @@ export default function DestinationWedding() {
               />
             </div>
             <div className="about-text">
-              <h2>Your Perfect Wedding, Anywhere in India</h2>
+              <h2>Your Perfect Wedding, Anywhere</h2>
               <p>
                 Planning a destination wedding in India? Let us bring professional makeup
                 artistry to your special location. Whether it&apos;s a beach wedding in Goa,

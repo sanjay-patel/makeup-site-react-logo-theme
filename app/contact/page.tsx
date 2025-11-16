@@ -33,10 +33,17 @@ export default function Contact() {
                   <div className="contact-text">
                     <h3>Address</h3>
                     <p>
-                      Shop No. 7, 1st floor, Marutidham Row-house, ABC circle
-                      <br />
-                      Sarathana Jakatnaka, Surat - 395006
-                      <br />
+                      <a
+                        href="https://www.google.com/maps/search/?api=1&query=Shop+No.+7,+1st+floor,+Marutidham+Row-house,+ABC+circle,+Sarathana+Jakatnaka,+Surat+-+395006"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: '#d6a553', textDecoration: 'none', cursor: 'pointer' }}
+                      >
+                        Shop No. 7, 1st floor, Marutidham Row-house, ABC circle
+                        <br />
+                        Sarathana Jakatnaka, Surat - 395006
+                        <br />
+                      </a>
                     </p>
                   </div>
                 </div>
