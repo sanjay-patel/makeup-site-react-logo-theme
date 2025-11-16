@@ -7,11 +7,10 @@ export default function ContactForm() {
     name: '',
     email: '',
     phone: '',
-    service: '',
-    date: '',
     message: '',
   })
   const [formMessage, setFormMessage] = useState({ text: '', type: '' })
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -30,7 +29,6 @@ export default function ContactForm() {
       !formData.name ||
       !formData.email ||
       !formData.phone ||
-      // !formData.service ||
       !formData.message
     ) {
       setFormMessage({
@@ -63,22 +61,58 @@ export default function ContactForm() {
       return
     }
 
-    // Simulate form submission (replace with actual backend logic)
-    setTimeout(() => {
-      setFormMessage({
-        text: 'Thank you for your message! We will get back to you soon.',
-        type: 'success',
+    // Submit to Web3Forms
+    setIsSubmitting(true)
+    setFormMessage({ text: '', type: '' })
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          subject: 'New Contact Form Submission - Bhumi Makeup Artistry',
+        }),
       })
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        service: '',
-        date: '',
-        message: '',
+
+      const result = await response.json()
+
+      if (result.success) {
+        setFormMessage({
+          text: 'Thank you for your message! We will get back to you soon.',
+          type: 'success',
+        })
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: '',
+        })
+        setTimeout(() => setFormMessage({ text: '', type: '' }), 5000)
+      } else {
+        setFormMessage({
+          text: 'Something went wrong. Please try again or contact us directly.',
+          type: 'error',
+        })
+        setTimeout(() => setFormMessage({ text: '', type: '' }), 5000)
+      }
+    } catch (error) {
+      console.error('Form submission error:', error)
+      setFormMessage({
+        text: 'Failed to send message. Please try again later.',
+        type: 'error',
       })
       setTimeout(() => setFormMessage({ text: '', type: '' }), 5000)
-    }, 1000)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   // Set minimum date to today
@@ -160,8 +194,8 @@ export default function ContactForm() {
             required
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-primary">
-          Send Message
+        <button type="submit" className="btn btn-primary" disabled={isSubmitting}>
+          {isSubmitting ? 'Sending...' : 'Send Message'}
         </button>
       </form>
       {formMessage.text && (
