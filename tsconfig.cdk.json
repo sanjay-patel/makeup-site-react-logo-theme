@@ -20,8 +20,9 @@
     "typeRoots": ["./node_modules/@types"],
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "moduleResolution": "node"
   },
   "include": ["cdk/**/*.ts"],
-  "exclude": ["node_modules", "cdk.out"]
+  "exclude": ["node_modules", "cdk.out", "**/*.d.ts"]
 }

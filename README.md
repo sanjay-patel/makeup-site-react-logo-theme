@@ -1,174 +1,136 @@
-# Beauty by Artist - Next.js Website
+# Bhumi Makeup Artistry Website
 
-A professional makeup artist website built with Next.js, React, and TypeScript. This is a modern, SEO-friendly conversion of the original static HTML site.
+Professional makeup artist portfolio and booking website built with Next.js 14.
 
-## Features
+## 🚀 Quick Start
 
-- **Next.js 14** with App Router
-- **TypeScript** for type safety
-- **SEO Optimized** with:
-  - Meta tags and Open Graph
-  - Structured Data (JSON-LD)
-  - Dynamic sitemap
-  - Robots.txt
-  - Semantic HTML
-- **Responsive Design** - Mobile-first approach
-- **Client-side Interactions**:
-  - Mobile navigation menu
-  - Portfolio filtering
-  - Contact form validation
-  - Modal image viewer
-- **Performance Optimized**:
-  - Server Components by default
-  - Client Components only where needed
-  - Optimized CSS
-
-## Project Structure
-
-```
-├── app/
-│   ├── about/
-│   │   └── page.tsx          # About page
-│   ├── contact/
-│   │   └── page.tsx          # Contact page
-│   ├── portfolio/
-│   │   └── page.tsx          # Portfolio page
-│   ├── globals.css           # Global styles
-│   ├── layout.tsx            # Root layout with SEO
-│   ├── page.tsx              # Home page
-│   ├── robots.ts             # Robots.txt generator
-│   └── sitemap.ts            # Sitemap generator
-├── components/
-│   ├── ContactForm.tsx       # Contact form with validation
-│   ├── Footer.tsx            # Footer component
-│   ├── Hero.tsx              # Hero section
-│   ├── Navbar.tsx            # Navigation with mobile menu
-│   ├── PageHeader.tsx        # Page header component
-│   ├── PortfolioFilter.tsx   # Portfolio filter & modal
-│   └── StructuredData.tsx    # Schema.org JSON-LD
-├── public/                   # Static assets
-├── next.config.js            # Next.js configuration
-├── package.json              # Dependencies
-└── tsconfig.json             # TypeScript configuration
-```
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18.17.0 or higher
-- npm or yarn
-
-### Installation
-
-1. Install dependencies:
+### Development
 ```bash
 npm install
-```
-
-2. Run the development server:
-```bash
 npm run dev
 ```
+Visit http://localhost:3000
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm start` - Start production server
-- `npm run lint` - Run ESLint
-
-## SEO Features
-
-### Metadata
-Each page includes comprehensive metadata:
-- Title and description
-- Open Graph tags for social sharing
-- Twitter Card tags
-- Canonical URLs
-
-### Structured Data
-The site includes Schema.org structured data for:
-- BeautySalon business type
-- Contact information
-- Opening hours
-- Location data
-
-### Sitemap & Robots
-- Automatically generated sitemap at `/sitemap.xml`
-- Robots.txt at `/robots.txt`
-
-## Pages
-
-### Home (`/`)
-- Hero section with CTA
-- Services showcase
-- Why Choose Us section
-
-### About (`/about`)
-- Artist biography
-- Qualifications & experience
-- Core values
-
-### Portfolio (`/portfolio`)
-- Filterable portfolio items
-- Categories: Bridal, Party, Editorial, Photoshoot
-- Modal image viewer
-
-### Contact (`/contact`)
-- Contact form with validation
-- Business information
-- Social media links
-
-## Customization
-
-### Updating Content
-- Edit page content in `app/*/page.tsx` files
-- Modify portfolio items in `components/PortfolioFilter.tsx`
-- Update business information in `components/StructuredData.tsx`
-
-### Styling
-- Global styles: `app/globals.css`
-- Color scheme uses CSS variables for easy theming
-- Primary brand color: `#d4a5a5`
-
-### SEO
-- Update site URL in `app/layout.tsx` (metadataBase)
-- Modify sitemap URLs in `app/sitemap.ts`
-- Add Google verification code in `app/layout.tsx`
-
-## Deployment
-
-### Vercel (Recommended)
-1. Push code to GitHub
-2. Import project in Vercel
-3. Deploy automatically
-
-### Other Platforms
+### Deployment to AWS
 ```bash
-npm run build
-npm start
+# First time setup
+./cdk.sh bootstrap
+
+# Deploy
+./cdk.sh deploy
 ```
 
-## Performance
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment guide.
 
-- Server-side rendering for optimal SEO
-- Client components only for interactive features
-- Optimized images and assets
-- Minimal JavaScript payload
+## 📋 Features
 
-## Browser Support
+- ✨ Modern, responsive design
+- 💄 Service showcase (Bridal, Party, Photoshoot, Editorial)
+- 🌍 Destination wedding services across India
+- 📸 Portfolio gallery
+- 📱 Mobile-friendly
+- 📧 Contact form with Web3Forms integration
+- 🎨 Premium brand showcase
+- 🔍 SEO optimized with structured data
 
-- Modern browsers (Chrome, Firefox, Safari, Edge)
-- Mobile responsive design
-- Progressive enhancement approach
+## 🛠️ Tech Stack
 
-## License
+- **Framework:** Next.js 14 (App Router)
+- **Language:** TypeScript
+- **Styling:** CSS
+- **Forms:** Web3Forms
+- **Deployment:** AWS Amplify (via CDK)
+- **CI/CD:** Automatic from GitHub
 
-This project is private and proprietary.
+## 📁 Project Structure
 
-## Contact
+```
+├── app/                    # Next.js app router pages
+│   ├── about/             # About page
+│   ├── contact/           # Contact page
+│   ├── destination-wedding/ # Destination wedding services
+│   ├── portfolio/         # Portfolio gallery
+│   └── page.tsx           # Home page
+├── components/            # React components
+├── data/                  # Data files (brands, etc.)
+├── public/                # Static assets
+├── cdk/                   # AWS CDK infrastructure
+└── cdk.sh                 # Deployment helper script
+```
 
-For questions or support, contact info@beautybyartist.com
+## 🌐 Deployment
+
+This project uses AWS CDK to deploy to AWS Amplify with automatic CI/CD.
+
+### Prerequisites
+- AWS account with valid credentials
+- GitHub repository
+- Node.js 20 (via nvm)
+
+### Deploy
+```bash
+# Configure AWS credentials
+nvm exec 20 aws configure
+
+# Bootstrap CDK (first time only)
+./cdk.sh bootstrap
+
+# Deploy to AWS
+./cdk.sh deploy
+```
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for complete guide.
+
+## 📝 Environment Variables
+
+Create `.env.local` for development:
+```bash
+NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your_key_here
+```
+
+For deployment, configure in `.env`:
+```bash
+GITHUB_OWNER=your-username
+GITHUB_REPO=your-repo
+GITHUB_BRANCH=production
+GITHUB_TOKEN=your_github_token
+CDK_DEFAULT_ACCOUNT=your_aws_account_id
+CDK_DEFAULT_REGION=us-east-1
+NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your_key_here
+```
+
+## 💰 Cost
+
+AWS Amplify hosting: **$2-8/month** for typical traffic
+
+## 📚 Documentation
+
+- [DEPLOYMENT.md](DEPLOYMENT.md) - Deployment guide
+- [cdk/README.md](cdk/README.md) - CDK infrastructure details
+
+## 🔧 Available Scripts
+
+```bash
+# Development
+npm run dev         # Start development server
+npm run build       # Build for production
+npm start           # Start production server
+npm run lint        # Run ESLint
+
+# Deployment
+./cdk.sh bootstrap  # Bootstrap CDK (first time)
+./cdk.sh deploy     # Deploy to AWS
+./cdk.sh synth      # View CloudFormation template
+./cdk.sh diff       # Check deployment changes
+./cdk.sh destroy    # Remove from AWS
+```
+
+## 📞 Contact
+
+- **Website:** [Deployed URL from Amplify]
+- **Instagram:** [@bhumimakeupartistry](https://www.instagram.com/bhumimakeupartistry/)
+- **Location:** Surat, Gujarat, India
+
+## 📄 License
+
+All rights reserved © 2024 Bhumi Makeup Artistry

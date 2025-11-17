@@ -7,11 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "cdk": "cdk",
-    "cdk:deploy": "cdk deploy",
-    "cdk:synth": "cdk synth",
-    "cdk:diff": "cdk diff",
-    "cdk:destroy": "cdk destroy"
+    "cdk": "nvm exec 20 npx cdk",
+    "cdk:bootstrap": "nvm exec 20 npx cdk bootstrap",
+    "cdk:deploy": "nvm exec 20 npx cdk deploy",
+    "cdk:synth": "nvm exec 20 npx cdk synth",
+    "cdk:diff": "nvm exec 20 npx cdk diff",
+    "cdk:destroy": "nvm exec 20 npx cdk destroy"
   },
   "dependencies": {
     "next": "14.0.0",

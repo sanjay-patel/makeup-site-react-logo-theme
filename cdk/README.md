@@ -44,21 +44,67 @@ CDK_DEFAULT_REGION=us-east-1
 
 ## Deployment Steps
 
+### Quick Start (Recommended)
+
+We've created a helper script that automatically uses Node 20 for all CDK commands:
+
+```bash
+# Bootstrap CDK (first time only)
+./cdk.sh bootstrap
+
+# Deploy the stack
+./cdk.sh deploy
+
+# View the synthesized CloudFormation template
+./cdk.sh synth
+
+# Check differences before deploying
+./cdk.sh diff
+
+# Destroy the stack (when needed)
+./cdk.sh destroy
+```
+
+### Alternative: Using NPM Scripts
+
+You can also use npm scripts (these automatically use Node 20 via nvm):
+
+```bash
+# Bootstrap CDK (first time only)
+npm run cdk:bootstrap
+
+# Synthesize CloudFormation template
+npm run cdk:synth
+
+# Deploy the stack
+npm run cdk:deploy
+
+# Check differences
+npm run cdk:diff
+
+# Destroy the stack
+npm run cdk:destroy
+```
+
+### Manual Deployment Steps
+
 ### 1. Bootstrap CDK (First Time Only)
 
 Bootstrap your AWS account for CDK:
 
 ```bash
-npx cdk bootstrap aws://ACCOUNT-ID/REGION
+./cdk.sh bootstrap
+# or
+npm run cdk:bootstrap
 ```
-
-Replace `ACCOUNT-ID` with your AWS account ID and `REGION` with your preferred region (e.g., us-east-1).
 
 ### 2. Synthesize CloudFormation Template
 
 Generate the CloudFormation template to review what will be created:
 
 ```bash
+./cdk.sh synth
+# or
 npm run cdk:synth
 ```
 
@@ -67,6 +113,8 @@ npm run cdk:synth
 Deploy the infrastructure to AWS:
 
 ```bash
+./cdk.sh deploy
+# or
 npm run cdk:deploy
 ```
 
@@ -91,10 +139,21 @@ Visit the URL to access your deployed application.
 
 ## CDK Commands
 
+### Using Helper Script (Recommended)
+- `./cdk.sh bootstrap` - Bootstrap CDK (first time only)
+- `./cdk.sh synth` - Synthesize CloudFormation template
+- `./cdk.sh deploy` - Deploy the stack to AWS
+- `./cdk.sh diff` - Compare deployed stack with current state
+- `./cdk.sh destroy` - Destroy the stack (use with caution!)
+
+### Using NPM Scripts
+- `npm run cdk:bootstrap` - Bootstrap CDK (first time only)
 - `npm run cdk:synth` - Synthesize CloudFormation template
 - `npm run cdk:deploy` - Deploy the stack to AWS
 - `npm run cdk:diff` - Compare deployed stack with current state
 - `npm run cdk:destroy` - Destroy the stack (use with caution!)
+
+**Note:** All commands automatically use Node 20 via nvm.
 
 ## Custom Domain Setup
 
