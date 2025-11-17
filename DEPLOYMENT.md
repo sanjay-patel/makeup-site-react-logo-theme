@@ -28,14 +28,38 @@ Enter your:
 - Default region: `us-east-1`
 - Default output format: `json`
 
+## 🔐 Secure GitHub Token Setup (IMPORTANT!)
+
+**New Secure Approach:** Store your GitHub token in AWS Secrets Manager instead of `.env` file.
+
+### Step 1: Create GitHub Personal Access Token
+
+1. Go to https://github.com/settings/tokens
+2. Generate new token with `repo` and `admin:repo_hook` permissions
+3. Copy the token
+
+### Step 2: Store in AWS Secrets Manager
+
+```bash
+# Add token to .env temporarily
+# Edit .env and add: GITHUB_TOKEN=ghp_your_token
+
+# Run the setup script
+./scripts/setup-secrets.sh
+
+# Remove GITHUB_TOKEN from .env after success
+```
+
+See [SECRETS-SETUP.md](SECRETS-SETUP.md) for detailed instructions.
+
 ## Environment Variables
 
-Your `.env` file is already configured with:
+Your `.env` file should have:
 ```bash
 GITHUB_OWNER=sanjay-patel
 GITHUB_REPO=makeup-site-react-logo-theme
 GITHUB_BRANCH=production
-GITHUB_TOKEN=ghp_slsvx... (your token)
+# GITHUB_TOKEN=ghp_... (removed after storing in Secrets Manager)
 CDK_DEFAULT_ACCOUNT=120084649695
 CDK_DEFAULT_REGION=us-east-1
 NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=ce6e5b06-...

@@ -3,6 +3,7 @@ import { Construct } from 'constructs';
 import * as amplify from '@aws-cdk/aws-amplify-alpha';
 import * as codebuild from 'aws-cdk-lib/aws-codebuild';
 import * as iam from 'aws-cdk-lib/aws-iam';
+import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
 
 export interface MakeupSiteStackProps extends cdk.StackProps {
   /**
@@ -21,10 +22,10 @@ export interface MakeupSiteStackProps extends cdk.StackProps {
   githubBranch?: string;
 
   /**
-   * GitHub personal access token (stored in AWS Secrets Manager or SSM Parameter Store)
+   * GitHub personal access token secret name in AWS Secrets Manager
    * Should have repo access permissions
    */
-  githubToken: string;
+  githubTokenSecretName?: string;
 
   /**
    * Web3Forms access key for contact form
@@ -43,13 +44,21 @@ export class MakeupSiteStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props: MakeupSiteStackProps) {
     super(scope, id, props);
 
+    // Get GitHub token from Secrets Manager
+    const githubTokenSecretName = props.githubTokenSecretName || 'github-token';
+    const githubTokenSecret = secretsmanager.Secret.fromSecretNameV2(
+      this,
+      'GitHubToken',
+      githubTokenSecretName
+    );
+
     // Create Amplify App
     this.amplifyApp = new amplify.App(this, 'MakeupSiteApp', {
       appName: 'bhumi-makeup-artistry',
       sourceCodeProvider: new amplify.GitHubSourceCodeProvider({
         owner: props.githubOwner,
         repository: props.githubRepo,
-        oauthToken: cdk.SecretValue.unsafePlainText(props.githubToken),
+        oauthToken: githubTokenSecret.secretValue,
       }),
       environmentVariables: {
         NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY: props.web3formsAccessKey,
