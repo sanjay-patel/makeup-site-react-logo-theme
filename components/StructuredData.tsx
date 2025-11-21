@@ -4,9 +4,9 @@ export default function StructuredData() {
     '@type': 'BeautySalon',
     name: 'Bhumi Makeup Artistry',
     description: 'Professional makeup artist in Surat, Gujarat for bridal makeup, party makeup, photoshoots, and editorial work',
-    url: 'https://beautybyartist.com',
+    url: 'https://bhumimakeupartistry.com',
     telephone: '+91-9712652262',
-    email: 'bhumi0689@gmail.com',
+    email: 'info@bhumimakeupartistry.com',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Shop No. 7, 1st floor, Marutidham Row-house, ABC circle Sarathana Jakatnaka',
@@ -29,7 +29,7 @@ export default function StructuredData() {
       },
     ],
     priceRange: '$$',
-    image: 'https://beautybyartist.com/og-image.jpg',
+    image: 'https://bhumimakeupartistry.com/og-image.jpg',
     sameAs: [
       'https://www.instagram.com/bhumimakeupartistry/',
     ],

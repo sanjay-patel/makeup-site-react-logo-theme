@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import StructuredData from '@/components/StructuredData'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://beautybyartist.com'),
+  metadataBase: new URL('https://bhumimakeupartistry.com'),
   title: {
     default: 'Bhumi Makeup Artistry | Professional Makeup Artist in Surat, Gujarat',
     template: '%s | Bhumi Makeup Artistry'
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://beautybyartist.com',
+    url: 'https://bhumimakeupartistry.com',
     siteName: 'Bhumi Makeup Artistry',
     title: 'Bhumi Makeup Artistry | Professional Makeup Artist in Surat, Gujarat',
     description: 'Professional makeup artist in Surat, Gujarat for all occasions including bridal makeup, party makeup, photoshoots, and editorial work.',
@@ -78,7 +78,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://beautybyartist.com" />
+        <link rel="canonical" href="https://bhumimakeupartistry.com" />
         <StructuredData />
       </head>
       <body>

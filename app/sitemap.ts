@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://beautybyartist.com'
+  const baseUrl = 'https://bhumimakeupartistry.com'
 
   return [
     {

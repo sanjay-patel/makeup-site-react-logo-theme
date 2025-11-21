@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: 'https://beautybyartist.com/sitemap.xml',
+    sitemap: 'https://bhumimakeupartistry.com/sitemap.xml',
   }
 }
