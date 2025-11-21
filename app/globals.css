@@ -4,33 +4,6 @@
   box-sizing: border-box;
 }
 
-/* WhatsApp Widget Fixes */
-[class*="WAWidget"] *,
-[class*="whatsapp"] *,
-.floating-whatsapp * {
-  box-sizing: border-box !important;
-}
-
-[class*="WAWidget"] input,
-[class*="WAWidget"] textarea,
-[class*="whatsapp"] input,
-[class*="whatsapp"] textarea,
-.floating-whatsapp input,
-.floating-whatsapp textarea {
-  padding: 10px 12px !important;
-  margin: 0 !important;
-  width: 100% !important;
-  box-sizing: border-box !important;
-}
-
-[class*="WAWidget"] button,
-[class*="whatsapp"] button,
-.floating-whatsapp button {
-  padding: 8px 16px !important;
-  margin: 0 !important;
-  box-sizing: border-box !important;
-}
-
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
