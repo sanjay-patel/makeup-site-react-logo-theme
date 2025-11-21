@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import Image from 'next/image'
+import StaggerContainer, { StaggerItem } from '@/components/animations/StaggerContainer'
 
 export const metadata: Metadata = {
   title: 'Portfolio',
@@ -54,21 +55,23 @@ export default function Portfolio() {
 
       <section className="portfolio-section">
         <div className="container">
-          <div className="portfolio-grid">
+          <StaggerContainer className="portfolio-grid" staggerDelay={0.1}>
             {portfolioImages.map((image) => (
-              <div key={image.id} className="portfolio-item">
-                <div className="portfolio-image">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    width={500}
-                    height={500}
-                    style={{ width: '100%', height: 'auto', display: 'block' }}
-                  />
+              <StaggerItem key={image.id}>
+                <div className="portfolio-item">
+                  <div className="portfolio-image">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={500}
+                      height={500}
+                      style={{ width: '100%', height: 'auto', display: 'block' }}
+                    />
+                  </div>
                 </div>
-              </div>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerContainer>
         </div>
       </section>
     </>

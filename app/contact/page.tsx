@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import ContactForm from '@/components/ContactForm'
+import FadeIn from '@/components/animations/FadeIn'
 
 export const metadata: Metadata = {
   title: 'Contact Us',
@@ -22,10 +23,13 @@ export default function Contact() {
       <section className="contact-section">
         <div className="container">
           <div className="contact-grid">
-            <ContactForm />
+            <FadeIn direction="left">
+              <ContactForm />
+            </FadeIn>
 
             {/* Contact Info */}
-            <div className="contact-info">
+            <FadeIn direction="right" delay={0.2}>
+              <div className="contact-info">
               <h2>Get in Touch</h2>
               <div className="contact-details">
                 <div className="contact-item">
@@ -88,7 +92,8 @@ export default function Contact() {
                   </a> */}
                 </div>
               </div>
-            </div>
+              </div>
+            </FadeIn>
           </div>
         </div>
       </section>

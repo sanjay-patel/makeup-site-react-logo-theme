@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
 import Link from 'next/link'
 import Image from 'next/image'
+import FadeIn from '@/components/animations/FadeIn'
+import StaggerContainer, { StaggerItem } from '@/components/animations/StaggerContainer'
 
 export const metadata: Metadata = {
   title: 'Destination Wedding Makeup Services',
@@ -25,37 +27,41 @@ export default function DestinationWedding() {
       <section className="about-content">
         <div className="container">
           <div className="about-grid">
-            <div className="about-image">
-              <Image
-                src="/images/destination-wedding.png"
-                alt="Destination Wedding Makeup Services"
-                width={400}
-                height={400}
-                className="destination-wedding-photo"
-              />
-            </div>
-            <div className="about-text">
-              <h2>Your Perfect Wedding, Anywhere</h2>
-              <p>
-                Planning a destination wedding in India? Let us bring professional makeup
-                artistry to your special location. Whether it&apos;s a beach wedding in Goa,
-                a palace wedding in Udaipur, a heritage celebration in Jaipur, or a luxurious
-                venue in Ahmedabad or Baroda, we&apos;ll be there to make you look absolutely
-                stunning on your big day.
-              </p>
-              <p>
-                With over 5 years of experience and extensive travel portfolio across India,
-                we understand the unique challenges and requirements of destination weddings.
-                We bring premium products, professional equipment, and expertise to ensure
-                flawless makeup that lasts throughout your celebration, from traditional
-                ceremonies to contemporary receptions.
-              </p>
-              <p>
-                Our destination wedding services are tailored to accommodate different climates,
-                regional customs, and venue requirements across India, ensuring you look perfect
-                from the mehendi and sangeet through the wedding ceremony and reception.
-              </p>
-            </div>
+            <FadeIn direction="left">
+              <div className="about-image">
+                <Image
+                  src="/images/destination-wedding.png"
+                  alt="Destination Wedding Makeup Services"
+                  width={400}
+                  height={400}
+                  className="destination-wedding-photo"
+                />
+              </div>
+            </FadeIn>
+            <FadeIn direction="right" delay={0.2}>
+              <div className="about-text">
+                <h2>Your Perfect Wedding, Anywhere</h2>
+                <p>
+                  Planning a destination wedding in India? Let us bring professional makeup
+                  artistry to your special location. Whether it&apos;s a beach wedding in Goa,
+                  a palace wedding in Udaipur, a heritage celebration in Jaipur, or a luxurious
+                  venue in Ahmedabad or Baroda, we&apos;ll be there to make you look absolutely
+                  stunning on your big day.
+                </p>
+                <p>
+                  With over 5 years of experience and extensive travel portfolio across India,
+                  we understand the unique challenges and requirements of destination weddings.
+                  We bring premium products, professional equipment, and expertise to ensure
+                  flawless makeup that lasts throughout your celebration, from traditional
+                  ceremonies to contemporary receptions.
+                </p>
+                <p>
+                  Our destination wedding services are tailored to accommodate different climates,
+                  regional customs, and venue requirements across India, ensuring you look perfect
+                  from the mehendi and sangeet through the wedding ceremony and reception.
+                </p>
+              </div>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -63,64 +69,80 @@ export default function DestinationWedding() {
       {/* Services Included */}
       <section className="services">
         <div className="container">
-          <h2 className="section-title">What&apos;s Included</h2>
-          <div className="services-grid">
-            <div className="service-card">
-              <div className="service-icon">✈️</div>
-              <h3>Travel Across India</h3>
-              <p>
-                We travel to your destination wedding location anywhere in India, bringing
-                all necessary professional equipment and products.
-              </p>
-            </div>
-            <div className="service-card">
-              <div className="service-icon">💄</div>
-              <h3>Bridal Makeup</h3>
-              <p>
-                Complete bridal makeup service with premium
-                products and long-lasting application techniques.
-              </p>
-            </div>
-            <div className="service-card">
-              <div className="service-icon">👰</div>
-              <h3>Bridal Party</h3>
-              <p>
-                Makeup services for bridesmaids, mother of the bride, and entire
-                bridal party with coordinated looks.
-              </p>
-            </div>
-            <div className="service-card">
-              <div className="service-icon">🌴</div>
-              <h3>Climate Adapted</h3>
-              <p>
-                Specialized techniques and products for different climates -
-                tropical, humid, cold, or dry conditions.
-              </p>
-            </div>
-            <div className="service-card">
-              <div className="service-icon">⏰</div>
-              <h3>Multi-Day Events</h3>
-              <p>
-                Available for all your wedding functions including mehendi, sangeet,
-                haldi, and the main wedding ceremony.
-              </p>
-            </div>
-            <div className="service-card">
-              <div className="service-icon">🎨</div>
-              <h3>Touch-Up Service</h3>
-              <p>
-                On-site touch-up services throughout your wedding day to ensure you
-                look perfect in every photo.
-              </p>
-            </div>
-          </div>
+          <FadeIn>
+            <h2 className="section-title">What&apos;s Included</h2>
+          </FadeIn>
+          <StaggerContainer className="services-grid">
+            <StaggerItem>
+              <div className="service-card">
+                <div className="service-icon">✈️</div>
+                <h3>Travel Across India</h3>
+                <p>
+                  We travel to your destination wedding location anywhere in India, bringing
+                  all necessary professional equipment and products.
+                </p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="service-card">
+                <div className="service-icon">💄</div>
+                <h3>Bridal Makeup</h3>
+                <p>
+                  Complete bridal makeup service with premium
+                  products and long-lasting application techniques.
+                </p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="service-card">
+                <div className="service-icon">👰</div>
+                <h3>Bridal Party</h3>
+                <p>
+                  Makeup services for bridesmaids, mother of the bride, and entire
+                  bridal party with coordinated looks.
+                </p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="service-card">
+                <div className="service-icon">🌴</div>
+                <h3>Climate Adapted</h3>
+                <p>
+                  Specialized techniques and products for different climates -
+                  tropical, humid, cold, or dry conditions.
+                </p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="service-card">
+                <div className="service-icon">⏰</div>
+                <h3>Multi-Day Events</h3>
+                <p>
+                  Available for all your wedding functions including mehendi, sangeet,
+                  haldi, and the main wedding ceremony.
+                </p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="service-card">
+                <div className="service-icon">🎨</div>
+                <h3>Touch-Up Service</h3>
+                <p>
+                  On-site touch-up services throughout your wedding day to ensure you
+                  look perfect in every photo.
+                </p>
+              </div>
+            </StaggerItem>
+          </StaggerContainer>
         </div>
       </section>
 
       {/* Packages */}
       <section className="qualifications">
         <div className="container">
-          <h2 className="section-title">Destination Wedding Packages</h2>
+          <FadeIn>
+            <h2 className="section-title">Destination Wedding Packages</h2>
+          </FadeIn>
           <div className="qualifications-grid">
             <div className="qualification-card">
               <h3>Essential Package</h3>
