@@ -7,11 +7,23 @@ import StructuredData from '@/components/StructuredData'
 export const metadata: Metadata = {
   metadataBase: new URL('https://beautybyartist.com'),
   title: {
-    default: 'Bhumi Makeup Artistry | Professional Makeup Artist Services',
+    default: 'Bhumi Makeup Artistry | Professional Makeup Artist in Surat, Gujarat',
     template: '%s | Bhumi Makeup Artistry'
   },
-  description: 'Professional makeup artistry for all occasions including bridal makeup, party makeup, photoshoots, and editorial work. Over 10 years of experience with premium products.',
-  keywords: ['makeup artist', 'bridal makeup', 'party makeup', 'professional makeup', 'photoshoot makeup', 'editorial makeup', 'beauty services'],
+  description: 'Professional makeup artist in Surat, Gujarat for all occasions including bridal makeup, party makeup, photoshoots, and editorial work. Over 10 years of experience with premium products.',
+  keywords: [
+    'makeup artist surat',
+    'bridal makeup surat',
+    'party makeup surat',
+    'professional makeup artist gujarat',
+    'makeup artist in surat',
+    'wedding makeup surat',
+    'photoshoot makeup surat',
+    'editorial makeup surat',
+    'beauty services surat',
+    'bridal makeup artist surat',
+    'best makeup artist surat'
+  ],
   authors: [{ name: 'Bhumi Makeup Artistry' }],
   creator: 'Bhumi Makeup Artistry',
   publisher: 'Bhumi Makeup Artistry',
@@ -20,21 +32,21 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://beautybyartist.com',
     siteName: 'Bhumi Makeup Artistry',
-    title: 'Bhumi Makeup Artistry | Professional Makeup Artist Services',
-    description: 'Professional makeup artistry for all occasions including bridal makeup, party makeup, photoshoots, and editorial work.',
+    title: 'Bhumi Makeup Artistry | Professional Makeup Artist in Surat, Gujarat',
+    description: 'Professional makeup artist in Surat, Gujarat for all occasions including bridal makeup, party makeup, photoshoots, and editorial work.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Bhumi Makeup Artistry - Professional Makeup Services',
+        alt: 'Bhumi Makeup Artistry - Professional Makeup Services in Surat',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Bhumi Makeup Artistry | Professional Makeup Artist Services',
-    description: 'Professional makeup artistry for all occasions including bridal makeup, party makeup, photoshoots, and editorial work.',
+    title: 'Bhumi Makeup Artistry | Makeup Artist in Surat, Gujarat',
+    description: 'Professional makeup artist in Surat, Gujarat for all occasions including bridal makeup, party makeup, photoshoots, and editorial work.',
     images: ['/og-image.jpg'],
   },
   robots: {

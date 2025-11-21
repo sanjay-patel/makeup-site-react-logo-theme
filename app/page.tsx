@@ -6,10 +6,10 @@ import { brands } from '@/data/brands'
 
 export const metadata: Metadata = {
   title: 'Home',
-  description: 'Transform your beauty with professional makeup artistry for every occasion. Bridal, party, photoshoot, and editorial makeup services.',
+  description: 'Transform your beauty with professional makeup artistry in Surat, Gujarat for every occasion. Bridal, party, photoshoot, and editorial makeup services.',
   openGraph: {
-    title: 'Home | Bhumi Makeup Artistry',
-    description: 'Transform your beauty with professional makeup artistry for every occasion.',
+    title: 'Home | Bhumi Makeup Artistry - Surat\'s Premier Makeup Artist',
+    description: 'Transform your beauty with professional makeup artistry in Surat, Gujarat for every occasion.',
   },
 }
 
