@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { brands } from '@/data/brands'
 
 export const metadata: Metadata = {
-  title: 'Home Test',
+  title: 'Home',
   description: 'Transform your beauty with professional makeup artistry for every occasion. Bridal, party, photoshoot, and editorial makeup services.',
   openGraph: {
     title: 'Home | Bhumi Makeup Artistry',

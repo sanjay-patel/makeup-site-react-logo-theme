@@ -63,10 +63,12 @@ export class MakeupSiteStack extends cdk.Stack {
       environmentVariables: {
         NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY: props.web3formsAccessKey,
       },
+      platform: amplify.Platform.WEB_COMPUTE,
       buildSpec: codebuild.BuildSpec.fromObjectToYaml({
         version: '1.0',
         applications: [
           {
+            appRoot: '.',
             frontend: {
               phases: {
                 preBuild: {
