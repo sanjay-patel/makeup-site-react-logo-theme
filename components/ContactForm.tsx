@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, FormEvent } from 'react'
+import { analytics } from './GoogleAnalytics'
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -85,6 +86,9 @@ export default function ContactForm() {
       const result = await response.json()
 
       if (result.success) {
+        // Track successful form submission
+        analytics.trackContactForm()
+
         setFormMessage({
           text: 'Thank you for your message! We will get back to you soon.',
           type: 'success',

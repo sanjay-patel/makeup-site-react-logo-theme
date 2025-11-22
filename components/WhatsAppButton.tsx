@@ -1,12 +1,17 @@
 'use client'
 
 import { useState } from 'react'
+import { analytics } from './GoogleAnalytics'
 
 export default function WhatsAppButton() {
   const [isHovered, setIsHovered] = useState(false)
   const phoneNumber = '919712652262' // Your WhatsApp number
   const message = 'Hello! I would like to inquire about your makeup services.'
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
+
+  const handleClick = () => {
+    analytics.trackWhatsAppClick()
+  }
 
   return (
     <>
@@ -17,6 +22,7 @@ export default function WhatsAppButton() {
         className="whatsapp-float"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        onClick={handleClick}
         aria-label="Chat on WhatsApp"
       >
         <svg

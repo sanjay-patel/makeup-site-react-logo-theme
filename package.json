@@ -16,6 +16,7 @@
     "cdk:destroy": "nvm exec 20 npx cdk destroy"
   },
   "dependencies": {
+    "@next/third-parties": "^16.0.3",
     "framer-motion": "^12.23.24",
     "next": "14.0.0",
     "next-sitemap": "^4.2.3",

@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import StructuredData from '@/components/StructuredData'
 import WhatsAppButton from '@/components/WhatsAppButton'
+import { GoogleAnalytics } from '@/components/GoogleAnalytics'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://bhumimakeupartistry.com'),
@@ -76,11 +77,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const gaId = process.env.NEXT_PUBLIC_GA_ID || ''
+
   return (
     <html lang="en">
       <head>
         <link rel="canonical" href="https://bhumimakeupartistry.com" />
         <StructuredData />
+        <GoogleAnalytics gaId={gaId} />
       </head>
       <body>
         <Navbar />
