@@ -27,7 +27,7 @@ export function GoogleAnalytics({ gaId }: { gaId: string }) {
   return (
     <>
       <script
-        async
+        
         src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
       />
       <script
