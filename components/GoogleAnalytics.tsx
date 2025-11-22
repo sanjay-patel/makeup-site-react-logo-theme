@@ -1,5 +1,6 @@
 'use client'
 
+import Script from 'next/script'
 import { useEffect } from 'react'
 import { usePathname, useSearchParams } from 'next/navigation'
 
@@ -26,12 +27,13 @@ export function GoogleAnalytics({ gaId }: { gaId: string }) {
 
   return (
     <>
-      <script
-        
+      <Script
+        strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
       />
-      <script
+      <Script
         id="google-analytics"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
@@ -40,7 +42,6 @@ export function GoogleAnalytics({ gaId }: { gaId: string }) {
             gtag('config', '${gaId}', {
               page_path: window.location.pathname,
             });
-            console.log(gtag)
           `,
         }}
       />
