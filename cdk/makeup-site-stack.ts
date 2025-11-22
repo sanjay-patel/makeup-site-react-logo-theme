@@ -67,7 +67,7 @@ export class MakeupSiteStack extends cdk.Stack {
       }),
       environmentVariables: {
         NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY: props.web3formsAccessKey,
-        NEXT_PUBLIC_GA_ID: props.gaId || ''
+        ...(props.gaId ? { NEXT_PUBLIC_GA_ID: props.gaId } : {}),
       },
       platform: amplify.Platform.WEB_COMPUTE,
       buildSpec: codebuild.BuildSpec.fromObjectToYaml({

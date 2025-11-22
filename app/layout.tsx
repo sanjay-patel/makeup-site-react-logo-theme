@@ -77,7 +77,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const gaId = process.env.NEXT_PUBLIC_GA_ID || ''
+  const gaId = process.env.NEXT_PUBLIC_GA_ID || 'G-RCWCMCWC90'
+
+  console.log('GA ID in layout:', gaId) // Debug log
 
   return (
     <html lang="en">

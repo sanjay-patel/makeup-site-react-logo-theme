@@ -16,32 +16,32 @@ const portfolioImages = [
   {
     id: 1,
     src: '/images/portfolio/portfolio_image_1.jpg',
-    alt: 'Professional Makeup Work 1',
+    alt: 'Bridal makeup artist in Surat - Professional wedding makeup with flawless finish',
   },
   {
     id: 2,
     src: '/images/portfolio/portfolio_image_2.jpg',
-    alt: 'Professional Makeup Work 2',
+    alt: 'Indian bridal makeup look - Traditional wedding makeup by Bhumi Makeup Artistry Surat',
   },
   {
     id: 3,
     src: '/images/portfolio/porfolio_image_3.jpg',
-    alt: 'Professional Makeup Work 3',
+    alt: 'Destination wedding makeup artist - Professional bridal makeup for destination weddings in India',
   },
   {
     id: 4,
     src: '/images/portfolio/portfolio_image_4.jpg',
-    alt: 'Professional Makeup Work 4',
+    alt: 'Party makeup artist Surat - Glamorous evening makeup look for special occasions',
   },
   {
     id: 5,
     src: '/images/portfolio/portfolio_image_7.jpg',
-    alt: 'Professional Makeup Work 5',
+    alt: 'Professional photoshoot makeup - Camera ready makeup by certified makeup artist in Surat',
   },
   {
     id: 6,
     src: '/images/portfolio/portfolio_image_6.jpg',
-    alt: 'Professional Makeup Work 6',
+    alt: 'Editorial makeup artist Gujarat - Creative makeup for fashion and editorial photoshoots',
   },
 ]
 
