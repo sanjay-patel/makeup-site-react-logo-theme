@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code',
+    google: 'biJpZudJe2CUI6gj7VvzVhxWqmwQsydbHixD3hmsla0',
   },
   icons: {
     icon: '/favicon.ico',
