@@ -40,6 +40,7 @@ export function GoogleAnalytics({ gaId }: { gaId: string }) {
             gtag('config', '${gaId}', {
               page_path: window.location.pathname,
             });
+            console.log(gtag)
           `,
         }}
       />
