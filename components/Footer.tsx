@@ -38,6 +38,9 @@ export default function Footer() {
               {/* <a href="#" aria-label="Facebook">
                 Facebook
               </a>
+              <a href="#" aria-label="Facebook">
+                Facebook
+              </a>
               <a href="#" aria-label="Twitter">
                 Twitter
               </a> */}
