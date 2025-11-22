@@ -33,6 +33,11 @@ export interface MakeupSiteStackProps extends cdk.StackProps {
   web3formsAccessKey: string;
 
   /**
+   * Google Analytics Measurement ID (optional)
+   */
+  gaId?: string;
+
+  /**
    * Custom domain name (optional)
    */
   customDomain?: string;
@@ -62,6 +67,7 @@ export class MakeupSiteStack extends cdk.Stack {
       }),
       environmentVariables: {
         NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY: props.web3formsAccessKey,
+        ...(props.gaId && { NEXT_PUBLIC_GA_ID: props.gaId }),
       },
       platform: amplify.Platform.WEB_COMPUTE,
       buildSpec: codebuild.BuildSpec.fromObjectToYaml({
