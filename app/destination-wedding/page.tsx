@@ -298,12 +298,19 @@ export default function DestinationWedding() {
             Let&apos;s discuss your dream destination wedding and create a customized
             package that fits your needs perfectly.
           </p>
-          <Link href="/contact" className="btn btn-primary" style={{ marginRight: '1rem' }}>
-            Book Consultation
-          </Link>
-          <Link href="/portfolio" className="btn btn-primary">
-            View Portfolio
-          </Link>
+          <div style={{
+            display: 'flex',
+            gap: '1rem',
+            justifyContent: 'center',
+            flexWrap: 'wrap'
+          }}>
+            <Link href="/contact" className="btn btn-primary">
+              Book Consultation
+            </Link>
+            <Link href="/portfolio" className="btn btn-primary">
+              View Portfolio
+            </Link>
+          </div>
         </div>
       </section>
     </>
