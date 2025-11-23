@@ -4,10 +4,10 @@ import ContactForm from '@/components/ContactForm'
 import FadeIn from '@/components/animations/FadeIn'
 
 export const metadata: Metadata = {
-  title: 'Contact Us',
+  title: 'Contact | Book Makeup Artist in Surat',
   description: 'Get in touch to book your makeup appointment. Contact Bhumi Makeup Artistry for bridal makeup, party makeup, photoshoot, and editorial makeup services.',
   openGraph: {
-    title: 'Contact Us | Bhumi Makeup Artistry',
+    title: 'Contact | Book Makeup Artist in Surat',
     description: 'Get in touch to book your makeup appointment with our professional makeup artist.',
   },
 }

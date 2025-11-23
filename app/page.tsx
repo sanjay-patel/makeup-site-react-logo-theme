@@ -8,10 +8,10 @@ import StaggerContainer, { StaggerItem } from '@/components/animations/StaggerCo
 import ScaleIn from '@/components/animations/ScaleIn'
 
 export const metadata: Metadata = {
-  title: 'Home',
+  title: 'Professional Makeup Artist in Surat | Bridal & Party Makeup Studio',
   description: 'Transform your beauty with professional makeup artistry in Surat, Gujarat for every occasion. Bridal, party, photoshoot, and editorial makeup services.',
   openGraph: {
-    title: 'Home | Bhumi Makeup Artistry - Surat\'s Premier Makeup Artist',
+    title: 'Professional Makeup Artist in Surat | Bridal & Party Makeup Studio',
     description: 'Transform your beauty with professional makeup artistry in Surat, Gujarat for every occasion.',
   },
 }

@@ -4,10 +4,10 @@ import Image from 'next/image'
 import StaggerContainer, { StaggerItem } from '@/components/animations/StaggerContainer'
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
+  title: 'Makeup Portfolio | Best Makeup Artist in Surat',
   description: 'Explore our stunning makeup transformations including bridal makeup, party looks, editorial work, and photoshoot makeup. View our professional portfolio.',
   openGraph: {
-    title: 'Portfolio | Bhumi Makeup Artistry',
+    title: 'Makeup Portfolio | Professional Makeup Artist in Surat',
     description: 'Explore our stunning makeup transformations and professional work.',
   },
 }
