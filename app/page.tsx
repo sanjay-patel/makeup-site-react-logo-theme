@@ -21,7 +21,7 @@ export default function Home() {
     <>
       <Hero
         title="Transform Your Beauty"
-        subtitle="Professional Makeup Artistry for Every Occasion"
+        subtitle="Professional Makeup Artist for Every Occasion"
       />
 
       {/* Services Section */}

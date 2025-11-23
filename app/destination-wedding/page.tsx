@@ -20,7 +20,7 @@ export default function DestinationWedding() {
     <>
       <PageHeader
         title="Destination Wedding Services"
-        subtitle="Making your dream wedding beautiful, anywhere across India"
+        subtitle="Professional destination wedding makeup artist serving all of India"
       />
 
       {/* Introduction Section */}
