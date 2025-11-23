@@ -33,6 +33,7 @@ export default function About() {
                   width={400}
                   height={400}
                   className="artist-photo"
+                  priority
                 />
               </div>
             </FadeIn>

@@ -35,6 +35,7 @@ export default function DestinationWedding() {
                   width={400}
                   height={400}
                   className="destination-wedding-photo"
+                  priority
                 />
               </div>
             </FadeIn>
