@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   description: 'Professional destination wedding makeup services across India. Travel to Goa, Udaipur, Jaipur, Ahmedabad, Baroda, and more. Expert bridal makeup artist available for destination weddings throughout India.',
   keywords: ['destination wedding makeup India', 'travel makeup artist India', 'wedding makeup services India', 'bridal makeup Goa', 'destination bridal artist India', 'wedding makeup Udaipur', 'wedding makeup Ahmedabad', 'wedding makeup Baroda', 'bridal makeup Gujarat'],
   openGraph: {
-    title: 'Destination Wedding Makeup Services in India | Bhumi Makeup Artistry',
-    description: 'Professional makeup artist available for destination weddings across India. Make your dream wedding perfect with expert bridal makeup services.',
+    title: 'Destination Wedding Makeup Artist in India | Bhumi Patoliya',
+    description: 'Professional destination makeup artist available for weddings across India. Make your dream wedding perfect with expert bridal makeup services.',
   },
 }
 
@@ -43,17 +43,17 @@ export default function DestinationWedding() {
               <div className="about-text">
                 <h2>Your Perfect Wedding, Anywhere</h2>
                 <p>
-                  Planning a destination wedding in India? Let us bring professional makeup
-                  artistry to your special location. Whether it&apos;s a beach wedding in Goa,
-                  a palace wedding in Udaipur, a heritage celebration in Jaipur, or a luxurious
-                  venue in Ahmedabad or Baroda, we&apos;ll be there to make you look absolutely
+                  Planning a destination wedding in India? As an experienced destination makeup artist,
+                  I bring professional makeup services to your special location. Whether it&apos;s a beach
+                  wedding in Goa, a palace wedding in Udaipur, a heritage celebration in Jaipur, or a
+                  luxurious venue in Ahmedabad or Baroda, I&apos;ll be there to make you look absolutely
                   stunning on your big day.
                 </p>
                 <p>
-                  With over 5 years of experience and extensive travel portfolio across India,
-                  we understand the unique challenges and requirements of destination weddings.
-                  We bring premium products, professional equipment, and expertise to ensure
-                  flawless makeup that lasts throughout your celebration, from traditional
+                  With over 5 years of experience and extensive travel portfolio across India as a
+                  destination makeup artist, I understand the unique challenges and requirements of
+                  destination weddings. I bring premium products, professional equipment, and expertise
+                  to ensure flawless makeup that lasts throughout your celebration, from traditional
                   ceremonies to contemporary receptions.
                 </p>
                 <p>

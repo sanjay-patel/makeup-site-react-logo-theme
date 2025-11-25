@@ -49,7 +49,7 @@ export default function About() {
                 </p>
                 <p>
                   Based in Surat, my makeup studio offers a comfortable and professional environment
-                  where you can relax and prepare for your special day. My journey in makeup artistry
+                  where you can relax and prepare for your special day. My journey as a makeup artist
                   began with a deep love for colors, textures, and the transformative power of makeup.
                   I believe that makeup is not just about applying products—it&apos;s about enhancing
                   confidence, celebrating individuality, and creating unforgettable moments.
@@ -57,8 +57,8 @@ export default function About() {
                 <p>
                   As one of Surat&apos;s leading makeup artists, I specialize in bridal makeup, party looks,
                   photoshoots, and editorial work. Every client at my Surat makeup studio receives
-                  personalized attention, and I work closely with you to understand your vision and
-                  bring it to life.
+                  personalized attention, and I work closely with you as your dedicated makeup artist to
+                  understand your vision and bring it to life.
                 </p>
               </div>
             </FadeIn>
