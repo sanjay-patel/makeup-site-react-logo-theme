@@ -53,6 +53,24 @@ export default function Portfolio() {
         subtitle="Explore our stunning makeup transformations"
       />
 
+      {/* Introduction Text */}
+      <section className="about-content" style={{ paddingTop: '2rem', paddingBottom: '2rem' }}>
+        <div className="container">
+          <div  >
+            <p>
+              Explore my portfolio as a professional makeup artist in Surat, Gujarat.
+              This collection showcases bridal makeup transformations, party looks,
+              destination wedding work, and editorial photoshoot makeup I&apos;ve created
+              for clients across Surat and India. Each look is customized using premium
+              makeup brands to enhance natural beauty while reflecting individual style
+              and personality. From traditional Indian bridal makeup to contemporary
+              glamorous looks, these transformations represent my commitment to excellence
+              as a makeup artist.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="portfolio-section">
         <div className="container">
           <StaggerContainer className="portfolio-grid" staggerDelay={0.1}>
