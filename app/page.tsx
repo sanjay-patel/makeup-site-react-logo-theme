@@ -102,7 +102,7 @@ export default function Home() {
                   <div className="brand-logo">
                     <Image
                       src={brand.logo || '/images/brands/placeholder.svg'}
-                      alt={`${brand.name} logo`}
+                      alt={`${brand.name} - Premium Luxury Makeup Brand used by professional makeup artist`}
                       width={200}
                       height={80}
                       style={{ objectFit: 'contain' }}
