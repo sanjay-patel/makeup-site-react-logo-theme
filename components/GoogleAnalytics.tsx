@@ -1,10 +1,10 @@
 'use client'
 
 import Script from 'next/script'
-import { useEffect } from 'react'
+import { useEffect, Suspense } from 'react'
 import { usePathname, useSearchParams } from 'next/navigation'
 
-export function GoogleAnalytics({ gaId }: { gaId: string }) {
+function GoogleAnalyticsInner({ gaId }: { gaId: string }) {
   const pathname = usePathname()
   const searchParams = useSearchParams()
 
@@ -21,12 +21,20 @@ export function GoogleAnalytics({ gaId }: { gaId: string }) {
     }
   }, [pathname, searchParams, gaId])
 
+  return null
+}
+
+export function GoogleAnalytics({ gaId }: { gaId: string }) {
+
   if (!gaId) {
     return null
   }
 
   return (
     <>
+      <Suspense fallback={null}>
+        <GoogleAnalyticsInner gaId={gaId} />
+      </Suspense>
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
