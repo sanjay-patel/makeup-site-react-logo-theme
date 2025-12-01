@@ -7,9 +7,13 @@ import StaggerContainer, { StaggerItem } from '@/components/animations/StaggerCo
 export const metadata: Metadata = {
   title: 'About Bhumi Patoliya | Top Makeup Artist in Surat, Gujarat',
   description: 'Meet Bhumi Patoliya, Surat\'s leading professional makeup artist with over 5 years of experience. Certified makeup artist specializing in bridal makeup, party looks, and photoshoots in Surat, Gujarat.',
+  alternates: {
+    canonical: '/about',
+  },
   openGraph: {
     title: 'About Bhumi Patoliya | Top Makeup Artist in Surat, Gujarat',
     description: 'Meet Bhumi Patoliya, Surat\'s leading professional makeup artist with over 5 years of experience serving Surat and Gujarat.',
+    url: 'https://bhumimakeupartistry.com/about',
   },
 }
 

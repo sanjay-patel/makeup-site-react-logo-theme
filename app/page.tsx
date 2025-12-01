@@ -10,9 +10,13 @@ import ScaleIn from '@/components/animations/ScaleIn'
 export const metadata: Metadata = {
   title: 'Professional Makeup Artist in Surat | Bridal & Party Makeup Studio',
   description: 'Transform your beauty with professional makeup artistry in Surat, Gujarat for every occasion. Bridal, party, photoshoot, and editorial makeup services.',
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'Professional Makeup Artist in Surat | Bridal & Party Makeup Studio',
     description: 'Transform your beauty with professional makeup artistry in Surat, Gujarat for every occasion.',
+    url: 'https://bhumimakeupartistry.com',
   },
 }
 

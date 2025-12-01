@@ -6,9 +6,13 @@ import StaggerContainer, { StaggerItem } from '@/components/animations/StaggerCo
 export const metadata: Metadata = {
   title: 'Makeup Portfolio | Best Makeup Artist in Surat',
   description: 'Explore our stunning makeup transformations including bridal makeup, party looks, editorial work, and photoshoot makeup. View our professional portfolio.',
+  alternates: {
+    canonical: '/portfolio',
+  },
   openGraph: {
     title: 'Makeup Portfolio | Professional Makeup Artist in Surat',
     description: 'Explore our stunning makeup transformations and professional work.',
+    url: 'https://bhumimakeupartistry.com/portfolio',
   },
 }
 

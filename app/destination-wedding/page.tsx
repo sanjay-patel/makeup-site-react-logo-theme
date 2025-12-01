@@ -9,9 +9,13 @@ export const metadata: Metadata = {
   title: 'Destination Wedding Makeup Services',
   description: 'Professional destination wedding makeup services across India. Travel to Goa, Udaipur, Jaipur, Ahmedabad, Baroda, and more. Expert bridal makeup artist available for destination weddings throughout India.',
   keywords: ['destination wedding makeup India', 'travel makeup artist India', 'wedding makeup services India', 'bridal makeup Goa', 'destination bridal artist India', 'wedding makeup Udaipur', 'wedding makeup Ahmedabad', 'wedding makeup Baroda', 'bridal makeup Gujarat'],
+  alternates: {
+    canonical: '/destination-wedding',
+  },
   openGraph: {
     title: 'Destination Wedding Makeup Artist in India | Bhumi Patoliya',
     description: 'Professional destination makeup artist available for weddings across India. Make your dream wedding perfect with expert bridal makeup services.',
+    url: 'https://bhumimakeupartistry.com/destination-wedding',
   },
 }
 

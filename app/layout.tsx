@@ -82,7 +82,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://bhumimakeupartistry.com" />
         <StructuredData />
         <GoogleAnalytics gaId={gaId} />
       </head>
