@@ -76,10 +76,10 @@ export default function PortfolioCarousel({
                   className="portfolio-image"
                   priority={index === 0}
                 />
-                <div className="portfolio-overlay">
+                {/* <div className="portfolio-overlay">
                   <span className="portfolio-category">{item.category}</span>
                   <h3 className="portfolio-title">{item.title}</h3>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

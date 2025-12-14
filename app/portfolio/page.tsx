@@ -29,7 +29,7 @@ const portfolioImages = [
   },
   {
     id: 3,
-    src: '/images/portfolio/porfolio_image_3.jpg',
+    src: '/images/portfolio/portfolio_image_3.jpg',
     alt: 'Destination wedding makeup artist - Professional bridal makeup for destination weddings in India',
   },
   {

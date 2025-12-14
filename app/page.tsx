@@ -25,52 +25,52 @@ export const metadata: Metadata = {
 const featuredPortfolio = [
   {
     id: 1,
-    image: '/images/portfolio/featured/bridal-1.jpg',
+    image: '/images/portfolio/featured/portfolio_image_1.jpg',
     title: 'Traditional Bridal Makeup',
     category: 'Bridal Makeup'
   },
   {
     id: 2,
-    image: '/images/portfolio/featured/bridal-2.jpg',
+    image: '/images/portfolio/featured/portfolio_image_2.jpg',
     title: 'Modern Bridal Look',
     category: 'Bridal Makeup'
   },
   {
     id: 3,
-    image: '/images/portfolio/featured/engagement-1.jpg',
+    image: '/images/portfolio/featured/portfolio_image_3.jpg',
     title: 'Engagement Makeup',
     category: 'Engagement'
   },
   {
     id: 4,
-    image: '/images/portfolio/featured/reception-1.jpg',
+    image: '/images/portfolio/featured/portfolio_image_4.jpg',
     title: 'Reception Makeup',
     category: 'Reception'
   },
-  {
-    id: 5,
-    image: '/images/portfolio/featured/party-1.jpg',
-    title: 'Party Makeup',
-    category: 'Party'
-  },
-  {
-    id: 6,
-    image: '/images/portfolio/featured/destination-1.jpg',
-    title: 'Destination Wedding',
-    category: 'Destination Wedding'
-  },
-  {
-    id: 7,
-    image: '/images/portfolio/featured/bridal-3.jpg',
-    title: 'Royal Bridal Makeup',
-    category: 'Bridal Makeup'
-  },
-  {
-    id: 8,
-    image: '/images/portfolio/featured/bridal-4.jpg',
-    title: 'Glam Bridal Look',
-    category: 'Bridal Makeup'
-  }
+  // {
+  //   id: 5,
+  //   image: '/images/portfolio/featured/party-1.jpg',
+  //   title: 'Party Makeup',
+  //   category: 'Party'
+  // },
+  // {
+  //   id: 6,
+  //   image: '/images/portfolio/featured/destination-1.jpg',
+  //   title: 'Destination Wedding',
+  //   category: 'Destination Wedding'
+  // },
+  // {
+  //   id: 7,
+  //   image: '/images/portfolio/featured/bridal-3.jpg',
+  //   title: 'Royal Bridal Makeup',
+  //   category: 'Bridal Makeup'
+  // },
+  // {
+  //   id: 8,
+  //   image: '/images/portfolio/featured/bridal-4.jpg',
+  //   title: 'Glam Bridal Look',
+  //   category: 'Bridal Makeup'
+  // }
 ]
 
 export default function Home() {

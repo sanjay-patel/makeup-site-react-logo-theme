@@ -106,7 +106,7 @@ body {
 
 /* Hero Section */
 .hero {
-  height: 450px;
+  height: 400px;
   background: linear-gradient(135deg, #d6a553 0%, #b8883a 100%);
   position: relative;
   display: flex;
@@ -636,7 +636,7 @@ body {
     display: flex;
   }
   .hero {
-    height: 400px;
+    height: 320px;
   }
   .hero .hero-title {
     font-size: 2.5rem;
@@ -758,7 +758,7 @@ body {
 
 /* Featured Portfolio Section */
 .featured-portfolio {
-  padding: 4rem 0;
+  padding: 2rem 0;
   background: linear-gradient(135deg, #fdf8f3 0%, #fef5ed 100%);
 }
 
@@ -961,8 +961,13 @@ body {
 /* Responsive Styles */
 @media (max-width: 768px) {
   .featured-portfolio {
-    padding: 3rem 0;
+    padding: 1.5rem 0;
   }
+
+  .section-title {
+    margin-bottom: 2rem;
+  }
+
 
   .section-subtitle {
     font-size: 1rem;
