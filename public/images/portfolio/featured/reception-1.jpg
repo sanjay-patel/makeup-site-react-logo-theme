@@ -1,0 +1,11 @@
+<svg width="800" height="1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE5F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFB8D4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#grad4)"/>
+  <text x="400" y="480" font-family="Arial, sans-serif" font-size="32" fill="#8B446B" text-anchor="middle" font-weight="bold">Reception Makeup</text>
+  <text x="400" y="530" font-family="Arial, sans-serif" font-size="20" fill="#A0567D" text-anchor="middle">Replace with your photo</text>
+</svg>
