@@ -288,7 +288,7 @@ body {
 
 /* About Content */
 .about-content {
-  padding: 1rem 0 3rem 0;
+  padding: 5rem 0;
 }
 .about-content .about-grid {
   display: grid;
@@ -363,7 +363,7 @@ body {
 
 /* Portfolio Section */
 .portfolio-section {
-  padding: 1rem 0 3rem 0;
+  padding: 5rem 0;
 }
 .portfolio-section .portfolio-filters {
   display: flex;
@@ -663,95 +663,414 @@ body {
   }
 }
 
-/* Mobile Call Button */
-.mobile-call-button {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #d6a553;
-  color: #fff;
-  padding: 14px 30px;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  text-decoration: none;
-  box-shadow: 0 4px 20px rgba(214, 165, 83, 0.4);
-  z-index: 999;
-  transition: all 0.3s ease;
-  animation: pulse 2s infinite;
+/* Brands Page Styles */
+.brands-intro {
+  padding: 4rem 0;
+  background: #f9f9f9;
 }
 
-.mobile-call-button:hover {
-  background: #c89543;
-  transform: translateX(-50%) scale(1.05);
-  box-shadow: 0 6px 25px rgba(214, 165, 83, 0.5);
-}
-
-@keyframes pulse {
-  0%, 100% {
-    box-shadow: 0 4px 20px rgba(214, 165, 83, 0.4);
-  }
-  50% {
-    box-shadow: 0 4px 30px rgba(214, 165, 83, 0.7);
-  }
-}
-
-/* Show only on mobile */
-@media (max-width: 768px) {
-  .mobile-call-button {
-    display: inline-block;
-  }
-}
-
-/* FAQ Styles */
-.faq-container {
+.brands-intro .intro-content {
   max-width: 900px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  text-align: center;
 }
 
-.faq-item {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+.brands-intro h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
 }
 
-.faq-item:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
-  transform: translateY(-2px);
-}
-
-.faq-question {
-  color: #d6a553;
-  font-size: 1.3rem;
-  font-weight: 600;
+.brands-intro p {
+  font-size: 1.1rem;
+  color: #666;
   margin-bottom: 1rem;
-  line-height: 1.4;
+  line-height: 1.8;
 }
 
-.faq-answer {
-  color: #555;
-  font-size: 1.05rem;
+/* Brands Category Section */
+.brands-category-section {
+  padding: 4rem 0;
+}
+
+.brands-category-section:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.category-title {
+  font-size: 2rem;
+  color: #d6a553;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.brands-detailed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.brand-detail-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-detail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.brand-detail-header {
+  padding: 2rem 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.brand-detail-logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 60px;
+}
+
+.brand-website-link {
+  color: #d6a553;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.brand-website-link:hover {
+  color: #b8903f;
+}
+
+.brand-detail-content {
+  padding: 2rem;
+}
+
+.brand-detail-content h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.brand-description {
+  color: #666;
   line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.brand-best-for {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 3px solid #d6a553;
+}
+
+.brand-best-for strong {
+  color: #d6a553;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.brand-best-for p {
+  color: #666;
+  font-size: 0.95rem;
   margin: 0;
 }
 
+/* Brand Carousel Styles */
+.brand-carousel {
+  margin: 0;
+  position: relative;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-image-wrapper {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background: #f5f5f5;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #d6a553;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button:hover {
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-button-prev {
+  left: 15px;
+}
+
+.carousel-button-next {
+  right: 15px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  background: #fff;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #d6a553;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.carousel-dot:hover {
+  background: rgba(214, 165, 83, 0.5);
+}
+
+.carousel-dot.active {
+  background: #d6a553;
+  transform: scale(1.2);
+}
+
+/* Why Premium Section */
+.why-premium {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+}
+
+.premium-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.premium-benefit {
+  text-align: center;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.premium-benefit:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.premium-benefit h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.premium-benefit p {
+  color: #666;
+  line-height: 1.7;
+}
+
+/* FAQ Section */
+.brands-faq {
+  padding: 5rem 0;
+  background: #fff;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.faq-item {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #d6a553;
+  transition: background 0.3s ease;
+}
+
+.faq-item:hover {
+  background: #f5f5f5;
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.faq-item p {
+  color: #666;
+  line-height: 1.7;
+}
+
+/* CTA Section */
+.brands-cta {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #d6a553 0%, #b8903f 100%);
+  color: #fff;
+}
+
+.brands-cta .cta-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.brands-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.brands-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.brands-cta .btn-primary {
+  background: #fff;
+  color: #d6a553;
+}
+
+.brands-cta .btn-primary:hover {
+  background: #f5f5f5;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.brands-cta .btn-secondary {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.brands-cta .btn-secondary:hover {
+  background: #fff;
+  color: #d6a553;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles for Brands Page */
 @media (max-width: 768px) {
-  .faq-item {
-    padding: 1.5rem;
+  .brands-detailed-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
-  .faq-question {
-    font-size: 1.1rem;
+  .brand-detail-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
   }
 
-  .faq-answer {
-    font-size: 1rem;
+  .brand-detail-logo {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .premium-benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .brands-intro h2 {
+    font-size: 2rem;
+  }
+
+  .category-title {
+    font-size: 1.75rem;
+  }
+
+  .carousel-button {
+    width: 35px;
+    height: 35px;
+    font-size: 1.5rem;
+  }
+
+  .carousel-button-prev {
+    left: 10px;
+  }
+
+  .carousel-button-next {
+    right: 10px;
+  }
+
+  .brands-cta h2 {
+    font-size: 2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 300px;
   }
 }

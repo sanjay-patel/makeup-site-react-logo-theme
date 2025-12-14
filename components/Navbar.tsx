@@ -84,6 +84,15 @@ export default function Navbar() {
           </li>
           <li>
             <Link
+              href="/brands"
+              className={isActive('/brands') ? 'active' : ''}
+              onClick={closeMenu}
+            >
+              Brands
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/destination-wedding"
               className={isActive('/destination-wedding') ? 'active' : ''}
               onClick={closeMenu}
