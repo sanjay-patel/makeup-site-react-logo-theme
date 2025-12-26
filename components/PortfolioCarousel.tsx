@@ -23,66 +23,100 @@ export default function PortfolioCarousel({
   autoPlayInterval = 4000
 }: PortfolioCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [slidesToShow, setSlidesToShow] = useState(1)
 
+  // Determine slides to show based on screen size
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setSlidesToShow(2)
+      } else {
+        setSlidesToShow(1)
+      }
+    }
+
+    // Set initial value
+    handleResize()
+
+    // Add event listener
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  // Auto-play functionality
   useEffect(() => {
     if (!autoPlay) return
 
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === items.length - 1 ? 0 : prevIndex + 1
-      )
+      setCurrentIndex((prevIndex) => {
+        const maxIndex = items.length - slidesToShow
+        return prevIndex >= maxIndex ? 0 : prevIndex + 1
+      })
     }, autoPlayInterval)
 
     return () => clearInterval(interval)
-  }, [autoPlay, autoPlayInterval, items.length])
+  }, [autoPlay, autoPlayInterval, items.length, slidesToShow])
 
   const goToSlide = (index: number) => {
-    setCurrentIndex(index)
+    const maxIndex = items.length - slidesToShow
+    setCurrentIndex(Math.min(index, maxIndex))
   }
 
   const goToPrevious = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? items.length - 1 : prevIndex - 1
+      prevIndex === 0 ? items.length - slidesToShow : prevIndex - 1
     )
   }
 
   const goToNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === items.length - 1 ? 0 : prevIndex + 1
-    )
+    setCurrentIndex((prevIndex) => {
+      const maxIndex = items.length - slidesToShow
+      return prevIndex >= maxIndex ? 0 : prevIndex + 1
+    })
   }
 
   if (!items || items.length === 0) {
     return null
   }
 
+  // Calculate number of dots for desktop view
+  const totalDots = slidesToShow === 2 ? items.length - 1 : items.length
+
   return (
     <div className="portfolio-carousel-container">
       <div className="portfolio-carousel">
         <div className="portfolio-carousel-wrapper">
-          {items.map((item, index) => (
-            <div
-              key={item.id}
-              className={`portfolio-slide ${
-                index === currentIndex ? 'active' : ''
-              }`}
-            >
-              <div className="portfolio-image-wrapper">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
-                  className="portfolio-image"
-                  priority={index === 0}
-                />
-                {/* <div className="portfolio-overlay">
-                  <span className="portfolio-category">{item.category}</span>
-                  <h3 className="portfolio-title">{item.title}</h3>
-                </div> */}
+          <div
+            className="portfolio-slides-track"
+            style={{
+              transform: `translateX(-${currentIndex * (100 / slidesToShow)}%)`,
+            }}
+          >
+            {items.map((item, index) => (
+              <div
+                key={item.id}
+                className="portfolio-slide"
+                style={{
+                  width: `${100 / slidesToShow}%`,
+                }}
+              >
+                <div className="portfolio-image-wrapper">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="portfolio-image"
+                    priority={index === 0 || index === 1}
+                  />
+                  {/* <div className="portfolio-overlay">
+                    <span className="portfolio-category">{item.category}</span>
+                    <h3 className="portfolio-title">{item.title}</h3>
+                  </div> */}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         {/* Navigation Arrows */}
@@ -103,7 +137,7 @@ export default function PortfolioCarousel({
 
         {/* Dots Navigation */}
         <div className="portfolio-dots">
-          {items.map((_, index) => (
+          {Array.from({ length: totalDots }).map((_, index) => (
             <button
               key={index}
               className={`portfolio-dot ${
