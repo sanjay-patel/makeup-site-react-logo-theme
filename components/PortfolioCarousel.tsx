@@ -29,7 +29,7 @@ export default function PortfolioCarousel({
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
-        setSlidesToShow(2)
+        setSlidesToShow(3)
       } else {
         setSlidesToShow(1)
       }
@@ -80,7 +80,7 @@ export default function PortfolioCarousel({
   }
 
   // Calculate number of dots for desktop view
-  const totalDots = slidesToShow === 2 ? items.length - 1 : items.length
+  const totalDots = slidesToShow > 1 ? items.length - slidesToShow + 1 : items.length
 
   return (
     <div className="portfolio-carousel-container">
@@ -105,7 +105,7 @@ export default function PortfolioCarousel({
                     src={item.image}
                     alt={item.title}
                     fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="portfolio-image"
                     priority={index === 0 || index === 1}
                   />
