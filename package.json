@@ -11,12 +11,12 @@
     "test:watch": "jest --watch",
     "test:seo": "jest __tests__/seo",
     "test:coverage": "jest --coverage",
-    "cdk": "nvm exec 20 npx cdk",
-    "cdk:bootstrap": "nvm exec 20 npx cdk bootstrap",
-    "cdk:deploy": "nvm exec 20 npx cdk deploy",
-    "cdk:synth": "nvm exec 20 npx cdk synth",
-    "cdk:diff": "nvm exec 20 npx cdk diff",
-    "cdk:destroy": "nvm exec 20 npx cdk destroy"
+    "cdk": "npx dotenv-cli -e .env -- npx cdk",
+    "cdk:bootstrap": "npx dotenv-cli -e .env -- npx cdk bootstrap",
+    "cdk:deploy": "npx dotenv-cli -e .env -- npx cdk deploy",
+    "cdk:synth": "npx dotenv-cli -e .env -- npx cdk synth",
+    "cdk:diff": "npx dotenv-cli -e .env -- npx cdk diff",
+    "cdk:destroy": "npx dotenv-cli -e .env -- npx cdk destroy"
   },
   "dependencies": {
     "@next/third-parties": "^16.0.3",
