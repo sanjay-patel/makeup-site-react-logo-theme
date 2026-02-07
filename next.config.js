@@ -14,6 +14,17 @@ const nextConfig = {
         destination: 'https://bhumimakeupartistry.com/:path*',
         permanent: true,
       },
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.bhumimakeupartistry.com',
+          },
+        ],
+        destination: 'https://bhumimakeupartistry.com/:path*',
+        permanent: true,
+      },
     ]
   },
 }

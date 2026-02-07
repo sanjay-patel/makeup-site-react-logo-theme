@@ -6,6 +6,7 @@ import { brands } from '@/data/brands'
 import FadeIn from '@/components/animations/FadeIn'
 import StaggerContainer, { StaggerItem } from '@/components/animations/StaggerContainer'
 import ScaleIn from '@/components/animations/ScaleIn'
+import PortfolioCarousel from '@/components/PortfolioCarousel'
 
 export const metadata: Metadata = {
   title: 'Professional Makeup Artist in Surat | Bridal & Party Makeup Studio',
@@ -20,6 +21,58 @@ export const metadata: Metadata = {
   },
 }
 
+// Featured portfolio items for homepage carousel
+const featuredPortfolio = [
+  {
+    id: 1,
+    image: '/images/portfolio/featured/portfolio_image_1.jpg',
+    title: 'Traditional Bridal Makeup',
+    category: 'Bridal Makeup'
+  },
+  {
+    id: 2,
+    image: '/images/portfolio/featured/portfolio_image_2.jpg',
+    title: 'Modern Bridal Look',
+    category: 'Bridal Makeup'
+  },
+  {
+    id: 3,
+    image: '/images/portfolio/featured/portfolio_image_3.jpg',
+    title: 'Engagement Makeup',
+    category: 'Engagement'
+  },
+  {
+    id: 4,
+    image: '/images/portfolio/featured/portfolio_image_4.jpg',
+    title: 'Reception Makeup',
+    category: 'Reception'
+  },
+  // {
+  //   id: 5,
+  //   image: '/images/portfolio/featured/party-1.jpg',
+  //   title: 'Party Makeup',
+  //   category: 'Party'
+  // },
+  // {
+  //   id: 6,
+  //   image: '/images/portfolio/featured/destination-1.jpg',
+  //   title: 'Destination Wedding',
+  //   category: 'Destination Wedding'
+  // },
+  // {
+  //   id: 7,
+  //   image: '/images/portfolio/featured/bridal-3.jpg',
+  //   title: 'Royal Bridal Makeup',
+  //   category: 'Bridal Makeup'
+  // },
+  // {
+  //   id: 8,
+  //   image: '/images/portfolio/featured/bridal-4.jpg',
+  //   title: 'Glam Bridal Look',
+  //   category: 'Bridal Makeup'
+  // }
+]
+
 export default function Home() {
   return (
     <>
@@ -27,6 +80,19 @@ export default function Home() {
         title="Transform Your Beauty"
         subtitle="Professional Makeup Artist for Every Occasion"
       />
+
+      {/* Featured Portfolio Section */}
+      <section className="featured-portfolio">
+        <div className="container">
+          <FadeIn>
+            <h2 className="section-title">Our Work</h2>
+            <p className="section-subtitle">
+              Explore our stunning makeup transformations showcasing bridal, party, and special occasion looks
+            </p>
+          </FadeIn>
+          <PortfolioCarousel items={featuredPortfolio} autoPlay={true} autoPlayInterval={4000} />
+        </div>
+      </section>
 
       {/* Services Section */}
       <section className="services">

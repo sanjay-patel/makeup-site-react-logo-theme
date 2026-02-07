@@ -7,12 +7,16 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "cdk": "nvm exec 20 npx cdk",
-    "cdk:bootstrap": "nvm exec 20 npx cdk bootstrap",
-    "cdk:deploy": "nvm exec 20 npx cdk deploy",
-    "cdk:synth": "nvm exec 20 npx cdk synth",
-    "cdk:diff": "nvm exec 20 npx cdk diff",
-    "cdk:destroy": "nvm exec 20 npx cdk destroy"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:seo": "jest __tests__/seo",
+    "test:coverage": "jest --coverage",
+    "cdk": "npx dotenv-cli -e .env -- npx cdk",
+    "cdk:bootstrap": "npx dotenv-cli -e .env -- npx cdk bootstrap",
+    "cdk:deploy": "npx dotenv-cli -e .env -- npx cdk deploy",
+    "cdk:synth": "npx dotenv-cli -e .env -- npx cdk synth",
+    "cdk:diff": "npx dotenv-cli -e .env -- npx cdk diff",
+    "cdk:destroy": "npx dotenv-cli -e .env -- npx cdk destroy"
   },
   "dependencies": {
     "@next/third-parties": "^16.0.3",
@@ -25,11 +29,15 @@
   },
   "devDependencies": {
     "@aws-cdk/aws-amplify-alpha": "^2.224.0-alpha.0",
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.12",
     "@types/node": "^20.0.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "aws-cdk-lib": "^2.224.0",
     "constructs": "^10.4.3",
+    "jest": "^29.7.0",
+    "jest-environment-node": "^29.7.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.0.0"
   }

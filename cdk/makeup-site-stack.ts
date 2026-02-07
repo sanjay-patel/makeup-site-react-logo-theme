@@ -107,9 +107,13 @@ export class MakeupSiteStack extends cdk.Stack {
     // Add custom domain if provided
     if (props.customDomain) {
       const domain = this.amplifyApp.addDomain(props.customDomain, {
-        enableAutoSubdomain: true,
+        enableAutoSubdomain: false,
+        autoSubdomainCreationPatterns: ['*'],
       });
+      // Map root domain as primary
       domain.mapRoot(branch);
+      // Map www subdomain - AWS Amplify will automatically redirect www to non-www
+      // when the root domain is the primary mapping
       domain.mapSubDomain(branch, 'www');
     }
 
